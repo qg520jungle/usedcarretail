@@ -1,0 +1,54 @@
+// out: null
+.btn{
+  border-radius: 0;
+}
+.btn-s (@c, @bc) {
+  color: @c;
+  background-color: @bc;
+  border-color: @bc;
+}
+.btn-app {
+  .btn-s(@color1,@main-c);
+}
+.btn-black {
+  .btn-s(#fff,@color1);
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: #fff;
+  }
+}
+.btn-grey{
+  .btn-s(#fff,@color6);
+  &:hover {
+    color: #fff;
+  }
+  &:focus {
+    color: #fff;
+  }
+}
+.u-btn{
+  display: inline-block;
+  text-align: center;
+}
+.btn-p{
+  width:180px;
+}
+.btn-m {
+  width: 240px;
+}
+.btn-l {
+  width: 400px;
+}
+.btn-more{
+  width: 142px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0;
+}
+.btn-b{
+  letter-spacing: 24px;
+}
