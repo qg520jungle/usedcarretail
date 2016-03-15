@@ -1,0 +1,9 @@
+.DS_Store
+/node_modules
+*.log
+/res/global.css
+/res/bootstrap.css
+/res/bootstrap.min.js
+/res/fonts
+/lib
+package.json
