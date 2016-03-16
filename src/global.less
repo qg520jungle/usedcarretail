@@ -38,7 +38,8 @@ li {
   background-color: @main-b2;
 }
 .g-body{
-
+  min-width: 1200px;
+  width: 100%;
 }
 .g-foot{
 
@@ -65,9 +66,12 @@ li {
     background-color: @main-b2;
     color:#fff;
     font-size: 14px;
+    &:hover{
+      background-color: @main-b;
+    }
   }
   .z-active{
-      background-color: @main-b;
+    background-color: @main-b;
   }
 }
 .m-login{
@@ -103,12 +107,51 @@ li {
     font-size: 15px;
     text-align: center;
     background-color: @side-li;
+    position: relative;
+    &:hover{
+      color:#4b7ca5;
+      background-color: @main-b3;
+    }
+  }
+  .u-icon-arrow-left{
+    display: none
   }
   .z-active{
     color:#4b7ca5;
     background-color: @main-b3;
+    .u-icon-arrow-left{
+      display: block;
+      position: absolute;
+      right: 0;
+      top:21px;
+    }
   }
 }
 .m-main{
-  float:left;
+  background-color: #ecebf0;
+}
+.m-crumb{
+  height: 38px;
+  line-height: 38px;
+  background-color: #f3f2fe;
+  margin-left: 160px;
+  padding-left: 20px;
+  color:#CCC;
+  span{
+    font-size: 12px;
+  }
+  a{
+    color: #ccc;
+    &:hover{
+      color: #50c5fd
+    }
+  }
+  .z-active{
+    color: #50c5fd
+  }
+}
+.m-wrap{
+  background-color: #fff;
+  margin-top: 11px;
+  margin-left: 172px;
 }
