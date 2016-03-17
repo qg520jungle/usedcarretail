@@ -1,6 +1,6 @@
 // out: null
 .btn{
-  border-radius: 0;
+  border-radius: 5px;
 }
 .btn-s (@c, @bc) {
   color: @c;
@@ -28,9 +28,20 @@
     color: #fff;
   }
 }
+.btn-main{
+  .btn-s(#fff,#ff7a47);
+}
+.btn-white{
+  color: #333;
+  background-color:#fff;
+  border-color: #ff7a47;
+}
 .u-btn{
   display: inline-block;
   text-align: center;
+}
+.btn-normal{
+  width: 80px;
 }
 .btn-p{
   width:180px;
