@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" id="viewport" content="width=400">
+  <meta name="keywords" content="首页" />
+  <meta name="description" content="首页" />
+  <title>首页</title>
+  <link href="res/bootstrap.css" rel="stylesheet">
+  <link href="res/global.css" rel="stylesheet">
+  <link href="res/carSelect.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <!--[if lte IE 9]>
+  <script src="lib/respond.min.js"></script>
+  <script src="lib/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="res/bootstrap.min.js"></script>
+  <!--<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />-->
+  <!--<link href="favicon.ico" rel="bookmark icon" />-->
+</head>
+<body>
+  <div class="search">
+    <ul>
+      <li>
+       <span class="p-l-tit">选择车型：</span>
+        <div class="input-a-area">
+          <div class="select"  data-toggle="select" id="carbrandlist">
+            <!--输入框层-->
+            <div class="select-selected" id="">
+              <span id="selectedCar">东风日产</span>
+              <i class="glyphicon glyphicon-chevron-down icon10-down1"></i>
+            </div>
+            <div class="select-poplist" data-toggle="selectpop">
+              <div id="sh_sltCar_pop" data-toggle="selectpop" class="selectpop ass-items " style="display: block;">
+            <div class="selectpop-box fn-clear box-width-02">
+                <div>
+               <a data-dismiss="selectpop" id="pCarClose"  href="javascript:void(0);" class="icon16 u-close"></a>
+                </div>
+              <!--下拉框左半部分-->
+              <div data-type="left" class="selectpop-box-prov">
+                 <h4 class="title-prov">请选择品牌</h4>
+                   <div id="pletters" class="selectpop-cont-btn fn-left">
+                      <a href="javascript:void(0);">A</a>
+                      <a href="javascript:void(0);">B</a>
+                      <a href="javascript:void(0);">C</a>
+                      <a href="javascript:void(0);">D</a>
+                      <a href="javascript:void(0);">F</a>
+                      <a href="javascript:void(0);">G</a>
+                      <a href="javascript:void(0);">H</a>
+                      <a href="javascript:void(0);">J</a>
+                      <a href="javascript:void(0);">K</a>
+                      <a href="javascript:void(0);">L</a>
+                      <a href="javascript:void(0);">M</a>
+                      <a href="javascript:void(0);">N</a>
+                      <a href="javascript:void(0);">O</a>
+                      <a href="javascript:void(0);">Q</a>
+                      <a href="javascript:void(0);">R</a>
+                      <a href="javascript:void(0);">S</a>
+                      <a href="javascript:void(0);">W</a>
+                      <a href="javascript:void(0);">X</a>
+                      <a href="javascript:void(0);">Y</a>
+                      <a href="javascript:void(0);">Z</a>
+                  </div>
+              <div class="selectpop-prov-cont fn-clear">
+                <div class="selectpop-cont-main  prov-width-03" id="pbrandlist">                   <dl class="town-con-dl"><dt>A</dt>
+                 <dd class="town-btn">
+                <a href="javascript:void(0);" brandid="33" class="">奥迪</a>
+                <a href="javascript:void(0);" brandid="34" class="">阿尔法罗密欧</a>                 <a href="javascript:void(0);" brandid="35" class="">阿斯顿·马丁</a>                  </dd>
+                </dl>
+                <dl class="town-con-dl"><dt>B</dt>
+                 <dd class="town-btn">
+                  <a href="javascript:void(0);" brandid="203">北汽幻速</a>
+                   <a href="javascript:void(0);" brandid="208">北汽新能源</a>
+                 </dd>
+                </dl>
+                </div>
+               </div>
+             </div>
+       <div id="pseriesblock" data-type="right" class="selectpop-box-prov" style="">
+       <h4 class="title-prov">请选择车系</h4>
+         <div class="selectpop-prov-cont fn-clear">
+           <div class="selectpop-cont-main prov-width-01" id="pserieslist">
+              <dl class="town-con-dl"><dt>北京奔驰</dt>
+                <dd class="town-btn">
+                  <a href="javascript:void(0);" seriesid="588">奔驰C级</a>
+                  <a href="javascript:void(0);" seriesid="197">奔驰E级</a>
+                </dd>
+              </dl>
+              <dl class="town-con-dl"><dt>梅赛德斯-AMG</dt>
+                 <dd class="town-btn">
+                  <a href="javascript:void(0);" seriesid="2842">奔驰A级AMG</a>
+                  <a href="javascript:void(0);" seriesid="2967">奔驰CLA级AMG</a>                 </dd>
+              </dl>
+              <dl class="town-con-dl">
+                <dt>梅赛德斯-迈巴赫</dt>
+              <dd class="town-btn"><a href="javascript:void(0);" seriesid="3665">迈巴赫S级</a></dd></dl>
+          </div>
+         </div>
+       </div>
+           <div id="pspecblock" data-type="right" class="selectpop-box-prov" style="">
+         <h4 class="title-prov">请选择车型</h4>
+            <div class="selectpop-prov-cont fn-clear">
+              <div class="selectpop-cont-main prov-width-02" id="pspeclist">
+
+              </div>
+            </div>
+          </div>
+         </div>
+        </div>
+     </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
