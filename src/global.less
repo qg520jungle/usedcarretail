@@ -202,9 +202,11 @@ li {
 
   .f-db{
     display: block;
+  }
     .m-btn-box{
     margin-right: 73px;
   }
+
 }
 .m-btn-box{
   /*margin-right: 73px;*/
@@ -389,13 +391,31 @@ li {
   }
 }
 
-  .m-carPic .u-cimg{
-      width: 180px;
-      height: 180px;
-      border: 1px solid #339999;
-      padding: 20px 10px;
-      background: pink;
+.m-ctrans{
+  float:left;
+  ul{
+    margin-top:20px;
+    margin-left: 15px;
   }
-
+  li{
+    float:left;
+  }
+  a{
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 88px;
+    background-color: gray;
+    color:#fff;
+    font-size: 14px;
+    &:hover{
+      background-color: @main-b;
+    }
+  }
+  .z-active{
+    background-color: @main-b;
+  }
+}
 
 
