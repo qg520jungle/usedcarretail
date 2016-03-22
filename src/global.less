@@ -180,7 +180,6 @@ li {
 }
 .m-c{
   background-color: #fff;
-  /*height: 565px;*/
 }
 .m-search{
    width: 1129px;
@@ -201,9 +200,14 @@ li {
   dt,dd{
     display: inline-block;
   }
-  .m-btn-box{
+
+  .f-db{
+    display: block;
+  }
+    .m-btn-box{
     margin-right: 73px;
   }
+
 }
 .m-btn-box{
   /*margin-right: 73px;*/
@@ -237,6 +241,27 @@ li {
 .pagination{
   margin-top: 0;
 }
+
+
+/*xurong*/
+.m-search .u-ccar{
+  width: 120px;
+}
+
+.m-search .u-ccinfo{
+  width: 150px;
+}
+
+.m-ctop{
+    background-color: #f3f2fe;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px auto;
+}
+/*xurong*/
+
 .m-cover{
 	display:none;
 	position:fixed;
@@ -367,13 +392,31 @@ li {
   }
 }
 
-
-
-
-
-
-
-
-
+.m-ctrans{
+  float:left;
+  ul{
+    margin-top:20px;
+    margin-left: 15px;
+  }
+  li{
+    float:left;
+  }
+  a{
+    display: block;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 88px;
+    background-color: gray;
+    color:#fff;
+    font-size: 14px;
+    &:hover{
+      background-color: @main-b;
+    }
+  }
+  .z-active{
+    background-color: @main-b;
+  }
+}
 
 
