@@ -6,9 +6,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="viewport" id="viewport" content="width=400">
-  <meta name="keywords" content="客户信息" />
-  <meta name="description" content="客户信息" />
-  <title>客户信息</title>
+  <meta name="keywords" content="添加订单" />
+  <meta name="description" content="添加订单" />
+  <title>添加订单</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
@@ -74,31 +74,23 @@
             <span>客户信息</span>
           </div>
           <div class="m-c2nd f-cb">
-            <div class="m-info f-cb">
-              <dl>
-                <dt>级别：</dt>
-                <dd>
-                  <div><span>H</span></div>
-                </dd>
-              </dl>
-              <dl>
-                <dt>姓名：</dt>
-                <dd>张三</dd>
-              </dl>
-              <dl>
-                <dt>性别：</dt>
-                <dd>男</dd>
-              </dl>
-              <dl>
-                <dt>额度：</dt>
-                <dd>星星</dd>
-              </dl>
-              <dl>
-                <dt>客户类别：</dt>
-                <dd>采购客户</dd>
-              </dl>
+           <div class="f-cb">
+            <div class="m-info-box f-cb">
+              <ul>
+                <li><div><span>H</span></div></li>
+                <li><span>张三</span></li>
+                <li><span>男</span></li>
+                <li>
+                  <i>星</i>
+                  <i>星</i>
+                  <i>星</i>
+                  <i>星</i>
+                  <i>星</i>
+                </li>
+                <li><span>采购客户</span></li>
+              </ul>
             </div>
-            <div class="m-info f-cb">
+            <div class="m-info f-fl f-cb">
               <dl>
                 <dt>电话：</dt>
                 <dd>13812341234</dd>
@@ -135,6 +127,7 @@
                 <dt>下次跟进：</dt>
                 <dd>2016/3/22</dd>
               </dl>
+            </div>
             </div>
             <div class="m-cdrop">
               <i class="glyphicon glyphicon-chevron-down" id="dropclick"></i>
@@ -280,7 +273,80 @@
              </div>
 
           </div>
-       </div>
+             <div class="m-t2nd">
+            <span>车源信息</span>
+          </div>
+          <div class="m-c2nd f-cb">
+            <div class="m-tips f-cb">
+              <div class="m-btn-box f-fl">
+              <a href="###" class="u-btn btn btn-normal btn-main">选择车型</a>
+            </div>
+            <div class="m-msg">
+              <span>宝马5系：该车系可用库存20辆、采购意向数8辆、销售意向数10辆</span>
+            </div>
+            <div class="m-progress">
+              <div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    <span class="sr-only">60% Complete</span>
+  </div>
+</div>
+            </div>
+            </div>
+              <div class="m-info f-cb">
+              <dl>
+                <dt>级别：</dt>
+                <dd>
+                  <div><span>H</span></div>
+                </dd>
+              </dl>
+              <dl>
+                <dt>姓名：</dt>
+                <dd>张三</dd>
+              </dl>
+              <dl>
+                <dt>性别：</dt>
+                <dd>男</dd>
+              </dl>
+              <dl>
+                <dt>额度：</dt>
+                <dd>星星</dd>
+              </dl>
+              <dl>
+                <dt>客户类别：</dt>
+                <dd>采购客户</dd>
+              </dl>
+            </div>
+               <div class="m-cdrop">
+              <i class="glyphicon glyphicon-chevron-down" id="dropclick2"></i>
+            </div>
+                  <!--隐藏显示页-->
+             <div id="DropList" style="display:none">
+<div class="m-info">
+  <dl>
+    <dt>订单金额：</dt>
+    <dd>
+      <input type="text" class="u-input u-input-normal"> <span>元</span>
+    </dd>
+  </dl>
+  <dl>
+    <dt>预交定金：</dt>
+    <dd>
+      <input type="text" class="u-input u-input-normal">  <span>元</span>
+    </dd>
+  </dl>
+  <a href="###" class="u-btn btn btn-normal btn-main">优惠申请</a>
+  <a href="###" class="u-btn btn btn-normal btn-main">提交</a>
+
+</div>
+
+
+             </div>
+
+
+
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -295,6 +361,15 @@
                 x = true;
             }else{
                 $("#carDropList").hide(500);
+                x = false;
+            }
+      });
+      $("#dropclick2").click(function(){
+          if(x ==false){
+                $("#DropList").show(800);
+                x = true;
+            }else{
+                $("#DropList").hide(500);
                 x = false;
             }
       });
