@@ -72,21 +72,20 @@
         <div class="m-c">
           <div class="m-t2nd">
             <span>客户信息</span>
-            <a class="u-btn btn-main btn-select " href="#"
-                   data-toggle="modal" data-target="#customModal">选择客户</a>
           </div>
-          <div class="m-c2nd f-cb">
-            <div class="m-info f-cb">
-              <dl>
+          <div class="m-c2nd">
+            <div class="container-fluid">
+            <div class="row">
+              <dl class="col-md-4 u-dl">
                 <dt>姓名*：</dt>
                 <dd><input type="text" class="u-input u-input-normal">
                 </dd>
               </dl>
-              <dl>
+              <dl  class="col-md-4 u-dl">
                 <dt>电话：</dt>
                 <dd><input type="text" class="u-input u-input-normal"></dd>
               </dl>
-              <dl>
+              <dl  class="col-md-4 u-dl">
                 <dt>意向级别：</dt>
                 <dd><select class="u-input u-input-normal">
                     <option>H</option>
@@ -95,8 +94,10 @@
                     <option>C</option>
                     <option>D</option>
                 </select></dd>
-              </dl>
+                </dl>
             </div>
+              </div>
+
 
             <div class="m-cdrop">
               <i class="glyphicon glyphicon-chevron-down" id="dropclick">
@@ -104,8 +105,9 @@
             </div>
                   <!--隐藏显示页-->
              <div id="carDropList" style="display:none">
-             <div class="m-info f-cb">
-              <dl>
+             <div class="container-fluid">
+            <div class="row">
+              <dl class="col-md-4 u-dl">
                 <dt>性别：</dt>
                 <dd><select class="u-input u-input-normal">
                      <option>男</option>
@@ -114,15 +116,15 @@
                     </select>
                 </dd>
               </dl>
-              <dl>
+              <dl class="col-md-4 u-dl">
                 <dt>固定电话：</dt>
                 <dd><input type="text" class="u-input u-input-normal"></dd>
               </dl>
-              <dl>
+              <dl class="col-md-4 u-dl">
                 <dt>身份证号：</dt>
                 <dd><input type="text" class="u-input u-input-normal"></dd>
               </dl>
-              <dl>
+              <dl class="col-md-8 u-dl">
                   <dt>家庭住址：</dt>
                 <dd class="u-address"><select class="u-input u-input-small">
                       <option>广东</option>
@@ -139,23 +141,21 @@
                       <option>广系</option>
                       <option>湖北</option>
                   </select>
-                <input type="text" class="u-input u-input-normal"></dd>
+                <input type="text" class="u-input u-input-large"></dd>
               </dl>
-              <dl>
+              <dl class="col-md-4 u-dl">
                   <dt>邮箱：</dt>
                   <dd><input type="text" class="u-input u-input-normal"></dd>
               </dl>
-               <dl>
+               <dl class="col-md-4 u-dl">
                   <dt>推荐人：</dt>
                   <dd><input type="text" class="u-input u-input-normal"></dd>
               </dl>
-            </div>
-
+                 </div>
+                 </div>
              </div>
-
           </div>
        </div>
-
 
        <!-- 模态框（Modal） -->
 <div class="modal fade" id="customModal" tabindex="-1" role="dialog"
