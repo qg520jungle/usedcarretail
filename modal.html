@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" id="viewport" content="width=400">
+  <meta name="keywords" content="模态框模板" />
+  <meta name="description" content="模态框模板" />
+  <title>首页</title>
+  <link href="res/bootstrap.css" rel="stylesheet">
+  <link href="res/global.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <!--[if lte IE 9]>
+  <script src="lib/respond.min.js"></script>
+  <script src="lib/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="res/bootstrap.min.js"></script>
+  <!--<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />-->
+  <!--<link href="favicon.ico" rel="bookmark icon" />-->
+</head>
+<body>
+  <div class="m-top">
+   <a class="u-btn btn btn-normal btn-main" href="#"
+        data-toggle="modal" data-target="#carModal">选择</a>
+      </div>
+
+  <!--弹出的模态框内容-->
+      <div class="modal fade bs-example-modal-lg" id="carModal" tabindex="-1" role="dialog"
+   aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog" style="margin:10px 150px">
+      <div class="modal-content"  style="width:1200px;">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"
+               aria-hidden="true">×
+            </button>
+            <h4 class="modal-title" id="myModalLabel">
+               选择车源
+            </h4>
+         </div>
+         <div class="modal-body  f-cb">
+           <div class="m-search">
+            <dl>
+              <dt>品牌：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl>
+              <dt>车系：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl class="last">
+              <dt>车型：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl>
+              <dt>发动机排量：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl>
+              <dt>行驶里程：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl class="last">
+              <dt>日期：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-small"><span class="s-fs-s"> ——</span>
+                <input type="text" class="u-input u-input-small">
+              </dd>
+            </dl>
+            <div class="m-btn-box f-fr">
+              <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white">取消</a>
+            </div>
+          </div>
+
+            <div class="m-table">
+            <table class="table table-bordered">
+              <tr>
+                <th>选择</th>
+                <th>品牌</th>
+                <th>车系</th>
+                <th class="w-10">车型名称</th>
+                <th>车牌号码</th>
+                <th>车身颜色</th>
+                <th>出厂日期</th>
+                <th>购买时间</th>
+                <th>行驶里程</th>
+                <th>销售定价</th>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+                <td>粤A:888888</td>
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3000miles</td>
+                <td>250000元</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+                <td>粤A:888888</td>
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3000miles</td>
+                <td>250000元</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+                <td>粤A:888888</td>
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3000miles</td>
+                <td>250000元</td>
+              </tr>
+               </table>
+            <div class="f-fr">
+              <nav>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default"
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary">
+               提交
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+   </div><!-- /.modal-dialog -->
+</div>
+
+  <!--modal-->
+
+    <script>
+
+    </script>
+    </body>
+</html>
