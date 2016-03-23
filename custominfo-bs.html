@@ -70,39 +70,198 @@
           <span>一级title</span>
         </div>
         <div class="m-c">
+
           <div class="m-t2nd">
             <span>二级title</span>
           </div>
           <div class="m-c2nd">
-            <div class="container">
-              <div class="row">
-                <div class="f-cb">
-                  <dl class="col-md-4 u-dl">
-                    <dt>车牌号：</dt>
-                    <dd> 粤B7888888  </dd>
+           <div class="container-fluid">
+            <div class="row">
+                <div class="m-info-box col-md-3 f-cb">
+                  <ul>
+                    <li><div><span>H</span></div></li>
+                    <li><span>张三</span></li>
+                    <li><span>男</span></li>
+                    <li>
+                      <i>星</i>
+                      <i>星</i>
+                      <i>星</i>
+                      <i>星</i>
+                      <i>星</i>
+                    </li>
+                    <li><span>采购客户</span></li>
+                  </ul>
+                </div>
+                <div class="m-dl-box col-md-9 f-cb">
+                  <dl class="col-md-4 col-sm-6 u-dl">
+                    <dt>标题1：</dt>
+                    <dd> 内容 每行3列，宽度百分比 </dd>
                   </dl>
-                  <dl class="col-md-4 u-dl">
-                    <dt>发动机号：</dt>
-                    <dd>  YT654000EY  </dd>
+                  <dl class="col-md-4 col-sm-6 u-dl">
+                    <dt>标题2：</dt>
+                    <dd>  内容2   </dd>
                   </dl>
-                  <dl class="col-md-4 u-dl">
+                  <dl class="col-md-4 col-sm-6 u-dl">
                     <dt>Vin码： </dt>
                     <dd> YTE0000000000000  </dd>
                   </dl>
-                  <dl class="col-md-4 u-dl">
+                  <dl class="col-md-4 col-sm-6 u-dl">
                     <dt>车牌号：</dt>
                     <dd> 粤B7888888  </dd>
                   </dl>
-                  <dl class="col-md-4 u-dl">
+                  <dl class="col-md-4 col-sm-6 u-dl">
                     <dt>发动机号：</dt>
                     <dd>  YT654000EY  </dd>
                   </dl>
-                  <dl class="col-md-4 u-dl">
+                  <dl class="col-md-4 col-sm-6 u-dl">
                     <dt>Vin码： </dt>
                     <dd> YTE0000000000000  </dd>
                   </dl>
 
                 </div>
+                <div class="m-cdrop">
+              <i class="glyphicon glyphicon-chevron-down" id="dropclick"></i>
+            </div>
+                  <!--隐藏显示页-->
+             <div id="carDropList" style="display:none">
+<div class=" m-tab-all">
+
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">基本信息</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">跟进</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <div class="m-tab">
+       <div class="f-cb">
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>推荐人：</dt>
+          <dd>郭金</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>电话：</dt>
+          <dd>13812341234</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>身份证号：</dt>
+          <dd>211022123412341234</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>地址：</dt>
+          <dd>湖北省锦州市监利县什么什么</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>邮箱：</dt>
+          <dd>111000</dd>
+        </dl>
+        </div>
+        <dl class="f-db u-block col-md-12 col-sm-12 u-dl">
+          <dt class="">跟踪记录：</dt>
+          <dd class="m-table col-md-12">
+            <table class="table table-bordered">
+              <tr>
+                <th>意向级别</th>
+                <th>跟踪内容</th>
+                <th>跟进人</th>
+                <th>车型（销售）</th>
+                <th>价格</th>
+                <th>公里数（销售）</th>
+                <th>车龄（销售）</th>
+                <th>呼出号码</th>
+                <th>跟进时间</th>
+              </tr>
+              <tr>
+                <td>H</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+      <div class="m-tab">
+        <div class="f-cb">
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>呼出电话：</dt>
+          <dd>
+            <input type="text" class="u-input u-input-normal">
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>意向级别：</dt>
+          <dd>
+            <select name="" id="">
+                <option value="">H</option>
+                <option value="">L</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>下次回访时间：</dt>
+          <dd>
+            <input type="text" class="u-input u-input-normal">
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>车型：</dt>
+          <dd>
+            <input type="text" class="u-input u-input-normal">
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>意向价格：</dt>
+          <dd>
+            <select name="" id="">
+                <option value="">50万元-100万元</option>
+                <option value="">20万元-50万元</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt>里程数(销售)：</dt>
+          <dd>
+            <select name="" id="">
+                <option value="">1万公里以下</option>
+                <option value="">1-5万公里</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="col-md-12 col-sm-6 u-dl">
+          <dt>车龄(销售)：</dt>
+          <dd>
+            <select name="" id="">
+                <option value="">1年内</option>
+                <option value="">1-3年</option>
+            </select>
+          </dd>
+        </dl>
+        </div>
+        <dl class="col-md-8 col-sm-6 u-dl">
+          <dt>会谈/跟踪描述：</dt>
+          <dd class="col-md-12">
+            <textarea name="" id="" class="u-textarea u-textarea-l"  ></textarea>
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+             </div>
+
          <!--       <div class="col-md-4">
                   <div class="input-group">
                     <span class="">定价：</span>
