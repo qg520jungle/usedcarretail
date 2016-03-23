@@ -133,6 +133,7 @@ li {
   /*padding-bottom: 54px;*/
   position: relative;
   padding-bottom: 20px;
+  height: 100%;
   /*margin-left: 160px;*/
 }
 .m-crumb{
@@ -155,6 +156,7 @@ li {
     color: #50c5fd
   }
 }
+
 .m-wrap{
   background-color: #fff;
   margin-top: 11px;
@@ -461,4 +463,37 @@ li {
 }
 .m-dl-box{
   margin-top: 15px;
+}
+.m-line{
+  background-color: #333;
+  opacity: .5;
+  filter: opacity(50%);
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+  @media (max-width: 991px) and (min-width: 768px){
+    .m-side{
+      display: none;
+    }
+  .m-crumb {
+      margin-left: 10px;
+  }
+  .m-wrap{
+     margin-left: 22px;;
+  }
+}
+@media (max-width: 767px){
+  .m-side{
+      display: none;
+    }
+  .m-crumb {
+      margin-left: 10px;
+  }
+  .m-wrap{
+     margin-left: 22px;;
+  }
 }
