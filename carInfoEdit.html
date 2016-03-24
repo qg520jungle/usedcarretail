@@ -6,9 +6,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="viewport" id="viewport" content="width=400">
-  <meta name="keywords" content="首页" />
-  <meta name="description" content="首页" />
-  <title>首页</title>
+  <meta name="keywords" content="车辆信息编辑" />
+  <meta name="description" content="车辆信息编辑" />
+  <title>车辆信息编辑</title>
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
@@ -399,7 +399,80 @@
       </div>
 
     </div>
-    <div role="tabpanel" class="tab-pane" id="profile"><div class="m-tab2">定高占位</div></div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+     <div class="m-tab">
+     <div class="m-fixedpoint  col-md-12">
+      <div class="m-img-point col-md-6">
+        <div class="u-point v1" xg-static="v1">位置点1</div>
+        <div class="u-point v2" xg-static="v2">位置点2</div>
+        <div class="u-point v3" xg-static="v3">位置点3</div>
+        <div class="u-point v4" xg-static="v4">位置点4</div>
+        <div class="u-point v5" xg-static="v5">位置点5</div>
+        <div class="u-point v6" xg-static="v6">位置点6</div>
+        <div class="u-point v7" xg-static="v7">位置点7</div>
+        <div class="u-point v8" xg-static="v8">位置点8</div>
+        <div class="u-point v9" xg-static="v9">位置点9</div>
+        <div class="u-point v10" xg-static="v10">位置点10</div>
+        <div class="u-point v11" xg-static="v11">位置点11</div>
+        <div class="u-point v12" xg-static="v12">位置点12</div>
+        <div class="u-point v13" xg-static="v13">位置点13</div>
+        <div class="u-point v14" xg-static="v14">位置点14</div>
+        <div class="u-point v15 z-active" xg-static="v15">位置点15</div>
+        <div class="u-img-pop"><img src="upload/da001_ta.jpg" alt="受伤部位"></div>
+      </div>
+      <div class="m-msg-point col-md-6">
+        <ul class="col-md-6">
+          <li><span>漆面检查</span></li>
+          <li class="u-msg v1" xg-static="v1">
+            <span>1.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v2" xg-static="v2">
+            <span>2.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v3" xg-static="v3">
+            <span>3.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v4" xg-static="v4">
+            <span>4.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v5" xg-static="v5">
+            <span>5.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v6" xg-static="v6">
+            <span>6.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v7" xg-static="v7">
+            <span>7.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v8" xg-static="v8">
+            <span>8.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v9" xg-static="v9">
+            <span>9.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v10" xg-static="v10">
+            <span>10.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v11" xg-static="v11">
+            <span>11.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v12" xg-static="v12">
+            <span>12.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v13" xg-static="v13">
+            <span>13.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v14" xg-static="v14">
+            <span>14.</span><span>左前翼子板</span><i class="s-green">对号</i>
+          </li>
+          <li class="u-msg v15 z-active" xg-static="v15">
+            <span>15.</span><span>左前翼子板</span><i class="s-red">对号</i>
+          </li>
+        </ul>
+      </div>
+     </div>
+    </div>
+    </div>
     <div role="tabpanel" class="tab-pane" id="messages"><div class="m-tab2">定高占位</div></div>
     <div role="tabpanel" class="tab-pane" id="settings"><div class="m-tab2">定高占位</div></div>
   </div>
@@ -560,6 +633,39 @@
                 x = false;
             }
       });
+      judgement();
+      $('.u-point').on('click',function(){
+        if($(this).hasClass('z-active')){
+          $('.'+$(this).attr('xg-static')).removeClass('z-active');
+          judgement();
+        }else{
+          $('.'+$(this).attr('xg-static')).addClass('z-active');
+          judgement();
+        }
+      });
+      $('.u-point').on('mouseover',function(){
+        var position = $(this).position();
+        $('.u-img-pop').css({
+          left:position.left+60+'px',
+          top:position.top-100+'px'
+        }).show();
+      });
+      $('.u-point').on('mouseout',function(){
+        $('.u-img-pop').hide()
+      });
+      $('.u-msg').on('click',function(){
+        if($(this).hasClass('z-active')){
+          $('.'+$(this).attr('xg-static')).removeClass('z-active');
+          judgement();
+        }else{
+          $('.'+$(this).attr('xg-static')).addClass('z-active');
+          judgement();
+        }
+      });
+      function judgement(){
+          $('.u-msg').find('i').text('对号').removeClass('s-red').addClass('s-green');
+          $('.u-msg.z-active').find('i').text('错号').removeClass('s-green').addClass('s-red');
+      }
     })
   </script>
 </body>
