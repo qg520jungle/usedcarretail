@@ -77,11 +77,12 @@
           <div class="m-c2nd">
           <div class="container-fluid">
             <div class="row">
-
-
-	<ul>
-		<li><span class="p-l-tit">选择车型：</span>
-			<div class="p-r-area">
+              <dl class="col-md-6 u-dl">
+                 <dt class="normal">
+                   选择车型：
+                 </dt>
+                 <dd class="s-va-m">
+                   	<div class="p-r-area">
 				<div class="input-a-area">
 					<div class="select eva-select1" data-toggle="select"
 						id="cbrandlist">
@@ -90,7 +91,7 @@
 							<span id="sltBscsCar">奥迪A4L</span><i class="icon10 icon10-down1"></i>
 						</div>
 						<div id="sh_sltCar_pop" data-toggle="selectpop"
-							class="selectpop ass-items " style="display: block;">
+							class="selectpop  ass-items " >
 							<div class="selectpop-box fn-clear box-width-02">
 								<div>
 									<a data-dismiss="selectpop" id="pCarClose"
@@ -122,7 +123,14 @@
 									</div>
 									<div class="selectpop-prov-cont fn-clear">
 										<div class="selectpop-cont-main  prov-width-03"
-											id="pbrandlist"></div>
+											id="pbrandlist">
+											  <dl class="town-con-dl">
+											  <dt>大众</dt>
+											  <dd class="town-btn">
+											  <a class="brandClick" id='+ids+' href="javascript:void(0);">321</a>
+											  </dd>
+											  </dl>
+											</div>
 									</div>
 									</div>
 									<div id="pseriesblock" data-type="right"
@@ -155,7 +163,11 @@
 
             </div>
           </div>
-          </div>
+
+                 </dd>
+               </dl>
+
+	  </div>
         </div>
       </div>
     </div>
@@ -202,6 +214,21 @@
 		Eva.BrandDelyTimeId = 0;
 		Eva.selectSeries = null;
 		Eva.SeriesDelyTimeId = 0;
+        /*页面交互*/
+        sh_sltCar.on('click',function(){
+          if(sh_sltCar_pop.is(':visible')){
+            sh_sltCar_pop.hide();
+          }else{
+
+            sh_sltCar_pop.show();
+          }
+
+        });
+        pCarClose.on('click',function(){
+          sh_sltCar_pop.hide();
+          /*处理数据*/
+        })
+
 		/*页面操作信息，选中品牌车系车型*/
 		var isLoadedBrand = false;
 		selectbrandid = 0, selectseriesid = 0, selectspecid = 0,
