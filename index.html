@@ -362,12 +362,22 @@
 
         $('.m-line').on('click',function(){
           $('.m-line').hide();
-          $('.m-side').show();
+          $('.m-side').show().addClass('j-side-hide');
           $('.m-crumb').css({
              marginLeft: '160px'
           })
           $('.m-wrap').css({
              marginLeft: '172px'
+          })
+          $('.j-side-hide').on('click',function(){
+            $('.m-line').show();
+            $('.m-side').hide();
+            $('.m-crumb').css({
+               marginLeft: '0px'
+            })
+            $('.m-wrap').css({
+               marginLeft: '12px'
+            })
           })
         });
 
