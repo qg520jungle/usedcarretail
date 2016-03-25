@@ -96,7 +96,7 @@
 </div>
             </div>
             </div>
-             <div>
+             <div class="f-cb">
                  <dl class="col-md-4 col-sm-6 u-dl">
                   <dt class="large">车型*：</dt>
                   <dd>
@@ -159,13 +159,14 @@
                   </div>
                  </div>
 
-             <div class="m-cdrop col-md-12">
-               <i class="glyphicon glyphicon-chevron-down" id="dropclick">
-                  <a href="##" class="u-linklist">点击查看更多信息</a></i>
-             </div>
+           <div class="panel panel-success wl-noborder m-paneldrop">
+            <div onclick="getAccessories()" class="glyphicon glyphicon-chevron-down panel-heading wl-noborder wl-padding wl-title collapsed m-paneldrop" data-toggle="collapse" href="#collapseOne" aria-expanded="false" style="width:100%">
+                  车辆基本信息
+                </div>
 
              <!--隐藏显示页-->
-             <div id="carDropList" style="display:none">
+             <div id="collapseOne" class="panel-collapse wl-noborder wl-padding collapse" aria-expanded="false" style="height: 10px;">
+                   <div class="panel-body wl-padding wl-noborder f-cb">
                  <dl class="col-md-4 col-sm-6 u-dl">
                   <dt class="large">车牌号：</dt>
                   <dd>
@@ -280,7 +281,18 @@
 
 
 
- <div class=" m-tab-all f-cb">
+                 </div>
+                 </div>
+                </div>
+
+
+         <div class="panel panel-success wl-noborder m-paneldrop">
+            <div onclick="getAccessories()" class="glyphicon glyphicon-chevron-down panel-heading wl-noborder wl-padding wl-title collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" style="width:100%">
+    车辆状态信息
+                </div>
+                <div id="collapseTwo" class="panel-collapse wl-noborder wl-padding collapse" aria-expanded="false" style="height: 10px;">
+                   <div class="panel-body wl-padding wl-noborder f-cb">
+                   <div class=" m-tab-all f-cb">
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">工部说明</a></li>
@@ -290,103 +302,89 @@
   </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
+
+
+                    <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home">
       <div class="m-tab">
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">转向系统：</dt>
            <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
         </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">发动机：</dt>
-           <dd>
+          <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">变速器：</dt>
             <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">避震器：</dt>
-           <dd>
+            <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">底盘行驶：</dt>
             <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">排气系统：</dt>
             <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">制动器：</dt>
-            <dd>
+           <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
-          <dl class="col-sm-4 u-dl">
+          <dl class="col-sm-6 u-dl">
             <dt class="large">变速器：</dt>
-            <dd>
+           <dd>
               <input type="radio" class="u-check" checked="checked">无异常
+              <input type="radio" class="u-check" checked="checked">异常
             </dd>
             <dd>
-              <input type="checkbox" value="" class="">异响
-            </dd>
-            <dd>
-              <input type="checkbox" value="" class="">故障
+              <input type="text" value="" class="u-input u-input-large">
             </dd>
       </dl>
       <dl class="col-sm-10 u-dl">
@@ -476,10 +474,19 @@
     <div role="tabpanel" class="tab-pane" id="messages"><div class="m-tab2">定高占位</div></div>
     <div role="tabpanel" class="tab-pane" id="settings"><div class="m-tab2">定高占位</div></div>
   </div>
-   </div>
-         <div class="m-t2nd">
-        <span> 建议维修项目（建议维修项目，选择则进入建议项目内不选默认为空）</span>
-          </div>
+                       </div>
+         </div>
+             </div>
+                </div>
+
+
+            <div class="panel panel-success wl-noborder m-paneldrop">
+            <div onclick="getAccessories()" class="glyphicon glyphicon-chevron-down panel-heading wl-noborder wl-padding wl-title collapsed " data-toggle="collapse" href="#collapseThree" aria-expanded="false" style="width:100%">
+                  建议维修项
+                </div>
+                 <div id="collapseThree" class="panel-collapse wl-noborder wl-padding collapse" aria-expanded="false" style="height: 10px;">
+                   <div class="panel-body wl-padding wl-noborder f-cb">
+
               <div class="m-c2nd">
               <div class="col-md-12">
                <dl class="col-md-3 u-dl">
@@ -532,10 +539,15 @@
                </dl>
                </div>
                </div>
-</div>
-         </div>
+                    </div>
+             </div>
+                </div>
+
+                 </div>
+               </div>
+             </div>
           </div>
-            </div>
+        </div>
       </div>
     </div>
   </div>
