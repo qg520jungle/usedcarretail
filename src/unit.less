@@ -232,6 +232,136 @@
     width: 100%;
   }
 }
+.u-logon{
+  overflow:auto;
+}
+.u-logon-bg{
+  min-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background: url(../upload/logonBg.jpg) center center no-repeat;     background-size: cover;
+}
+.m-logon-bg{
+  position: absolute;
+  top:95px;
+  left: 50%;
+  margin-left: -300px;
+  width: 332px;
+  height: 338px;
+  background-color: #fff;
+  opacity: .7;
+  filter: alpha(opacity=70);
+}
+.m-logon{
+  position: absolute;
+  top:95px;
+  left: 50%;
+  margin-left: -300px;
+  width: 332px;
+  height: 338px;
+
+  .title{
+    position: relative;
+    height: 76px;
+    width: 100%;
+  }
+  .tt1{
+    position: absolute;
+    top:25px;
+    left:42px;
+    font-size: 37px;
+    color:#1e82c2;
+  }
+  .tt2{
+    position: absolute;
+    top:27px;
+    left:43px;
+    font-size: 37px;
+    color:#c4c9cd;
+  }
+  .form{
+    width: 292px;
+    margin: 0 auto;
+  }
+  .u-logon-input{
+    margin-top: 15px;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 14px;
+    border: 1px solid #a5a5a5;
+    background-color: #fff;
+    .tt{
+      font-size: 16px;
+      height: 36px;
+      line-height: 34px;
+      display: inline-block;
+      margin-left: 11px;
+    }
+    .cc{
+      border: 0;
+      outline: 0;
+      width: 200px;
+    }
+    &.short{
+      width: 190px;
+      position: relative;
+    }
+    &.short .cc{
+      width: 90px;
+    }
+    .yzm{
+      position: absolute;
+      width: 90px;
+      height: 36px;
+      top: -1px;
+      right: -103px;
+      border:1px solid #a5a5a5;
+      background-color: #fff;
+    }
+  }
+  .u-logon-operation{
+    .u-icon-go{
+   padding-top: 2px;
+    }
+    .tt{
+      font-size: 14px;
+      color:#acacac;
+      margin-left: 14px;
+          vertical-align: super;
+    }
+    .cc,.cc:hover{
+      font-size: 14px;
+      color: #acacac;
+      text-decoration: underline;
+    }
+  }
+  .u-logon-btnbox{
+    width: 100%;
+    margin-top: 10px;
+    .u-btn-logon{
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      background-color: #ff7a47;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+    }
+  }
+}
+.u-icon-go{
+  display: inline-block;
+  cursor: pointer;
+  width:20px;
+  height: 20px;
+  background: url(../upload/go.png) center center no-repeat;
+  &.z-active{
+    background: url(../upload/go_active.png) center center no-repeat;
+  }
+}
 
 .u-hbrand-select{
    height:23px;
