@@ -108,6 +108,19 @@
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
+                <dl class="col-md-4 u-dl">
+              <dt class="large">車牌：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+                 </dl>
+                <dl class="col-md-4 u-dl">
+              <dt class="large">車牌：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
             <dl class="col-md-4 u-dl">
               <dt class="large">行驶里程：</dt>
               <dd>
@@ -117,14 +130,20 @@
             <dl class="col-md-4 u-dl ">
               <dt class="large">日期：</dt>
               <dd>
-                <input type="text" class="u-input u-input-small"><span class="s-fs-s"> ——</span>
+                <input type="text" class="u-input u-input-small"><span class="s-fs-s">-</span>
                 <input type="text" class="u-input u-input-small">
               </dd>
             </dl>
             </div>
-            <div class="m-btn-box f-fr col-md-3">
+           <!-- <div class="m-btn-box f-fr col-md-3">
               <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white">取消</a>
-            </div>
+            </div>-->
+             <dl class="col-md-4 u-dl f-fr">
+              <dt class="large"></dt>
+              <dd class="btn-psearch">
+                 <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white ">取消</a>
+              </dd>
+            </dl>
           </div>
           <div class="m-table">
             <table class="table table-bordered">
@@ -133,7 +152,6 @@
                 <th>品牌</th>
                 <th>车系</th>
                 <th class="w-10">车型名称</th>
-                <th>车牌号码</th>
                 <th>车身颜色</th>
                 <th>出厂日期</th>
                 <th>购买时间</th>
@@ -141,7 +159,7 @@
                 <th>客户姓名</th>
                 <th>联系电话</th>
                 <th>采购专员</th>
-                <th>状态</th>
+                <th class="w-5">状态</th>
                 <th>操作</th>
               </tr>
               <tr>
@@ -149,7 +167,6 @@
                 <td>日产</td>
                 <td>轩逸</td>
                 <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
                 <td>白色</td>
                 <td>2015/12/31</td>
                 <td>2015/12/31</td>
@@ -157,17 +174,17 @@
                 <td>张三</td>
                 <td>13812341234</td>
                 <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
+                <td class="z-no">未报价</td>
+                <td><i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
+                <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
+                  </td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>日产</td>
                 <td>轩逸</td>
                 <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
+
                 <td>白色</td>
                 <td>2015/12/31</td>
                 <td>2015/12/31</td>
@@ -175,7 +192,60 @@
                 <td>张三</td>
                 <td>13812341234</td>
                 <td>赵六</td>
-                <td>未报价</td>
+                <td class="z-yes">已报价</td>
+                <td>
+            <i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
+            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
+                </td>
+              </tr>
+                 <tr>
+                <td>2</td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3万</td>
+                <td>张三</td>
+                <td>13812341234</td>
+                <td>赵六</td>
+                <td class="z-yes">已报价</td>
+                <td>
+           <i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
+            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
+                     </td>
+              </tr>
+                 <tr>
+                <td>2</td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3万</td>
+                <td>张三</td>
+                <td>13812341234</td>
+                <td>赵六</td>
+                <td class="z-yes">已报价</td>
+                <td><i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
+            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i></td>
+              </tr>
+                 <tr>
+                <td>2</td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3万</td>
+                <td>张三</td>
+                <td>13812341234</td>
+                <td>赵六</td>
+                <td class="z-yes">已报价</td>
                 <td><i class="u-icon u-icon-m"></i>
                 <i class="u-icon u-icon-i"></i>
                 <i class="u-icon u-icon-b"></i></td>
@@ -185,7 +255,7 @@
                 <td>日产</td>
                 <td>轩逸</td>
                 <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
+
                 <td>白色</td>
                 <td>2015/12/31</td>
                 <td>2015/12/31</td>
@@ -193,7 +263,7 @@
                 <td>张三</td>
                 <td>13812341234</td>
                 <td>赵六</td>
-                <td>未报价</td>
+                <td  class="z-no">未报价</td>
                 <td><i class="u-icon u-icon-m"></i>
                 <i class="u-icon u-icon-i"></i>
                 <i class="u-icon u-icon-b"></i></td>
@@ -203,7 +273,7 @@
                 <td>日产</td>
                 <td>轩逸</td>
                 <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
+
                 <td>白色</td>
                 <td>2015/12/31</td>
                 <td>2015/12/31</td>
@@ -211,7 +281,44 @@
                 <td>张三</td>
                 <td>13812341234</td>
                 <td>赵六</td>
-                <td>未报价</td>
+                <td class="z-no">未报价</td>
+                <td>
+            <i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
+            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
+                  </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3万</td>
+                <td>张三</td>
+                <td>13812341234</td>
+                <td>赵六</td>
+                <td class="z-no">未报价</td>
+                <td><i class="u-icon u-icon-m"></i>
+                <i class="u-icon u-icon-i"></i>
+                <i class="u-icon u-icon-b"></i></td>
+              </tr>
+           <tr>
+                <td>3</td>
+                <td>日产</td>
+                <td>轩逸</td>
+                <td>2.0 XV CVT Prem 豪华版</td>
+
+                <td>白色</td>
+                <td>2015/12/31</td>
+                <td>2015/12/31</td>
+                <td>3万</td>
+                <td>张三</td>
+                <td>13812341234</td>
+                <td>赵六</td>
+                <td class="z-no">未报价</td>
                 <td><i class="u-icon u-icon-m"></i>
                 <i class="u-icon u-icon-i"></i>
                 <i class="u-icon u-icon-b"></i></td>
@@ -221,7 +328,7 @@
                 <td>日产</td>
                 <td>轩逸</td>
                 <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
+
                 <td>白色</td>
                 <td>2015/12/31</td>
                 <td>2015/12/31</td>
@@ -229,101 +336,12 @@
                 <td>张三</td>
                 <td>13812341234</td>
                 <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
+                <td class="z-no">未报价</td>
+                <td><i class="u-icon"></i>
+                <i class="u-icon"></i>
+              <i class="u-icon glyphicon glyphicon-edit"></i></td>
               </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>粤A:888888</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td>未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i><a href="">增</a><a href="">删</a><a href="">改</a><a href="">查</a></td>
-              </tr>
+
             </table>
             <div class="f-fl">
               <a href="javascript:void(0);" class="u-btn btn  btn-main"><span>+</span>增加车辆查询</a>
@@ -369,10 +387,11 @@
     $('.j-login').on('mouseout',function(){
       $('.j-login-pop').hide();
     });
+
+
+
 //    首页的导航和侧边栏
     //侧边栏的隐藏
-
-
         $('.m-line').on('click',function(){
           $('.m-line').hide();
           $('.m-side').show().addClass('j-side-hide');

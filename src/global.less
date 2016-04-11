@@ -1,5 +1,6 @@
 // out: ../res/global.css, compress: false, strictMath: true, cleancss:false, autoprefixer:true
 @import './bootstrap-alter';
+@import './iconfont';
 @import './btn';
 @import './function';
 @import './skin';
@@ -10,15 +11,19 @@
 @color2: #999;
 @color3: #ddd;
 @bg: #f0f0f0;
-@main-b:#31a3d1;
-@main-b2:#39b3e5;
-@main-b3:#8cdafa;
+@main-b:#32a4d3;
+@main-b2:#38b4e5;
+@main-b3:#8bdbf9;
 @main-c: #ffcb33;
 @main-mb_y: #ffcd0d;
-@side:#2b2b30;
+@side:#2c2b31;
 @side-li:#343339;
+html{
+    height: 100%;
+}
 body {
   font-family: 'Microsoft yahei';
+  height: 100%;
 }
 a:hover {
   text-decoration: none;
@@ -33,13 +38,19 @@ li {
   margin: 0;
 }
 .g-head{
+  height:68px;
   min-width: 1200px;
   width: 100%;
   background-color: @main-b2;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
 }
 .g-body{
   min-width: 1200px;
   width: 100%;
+  height: 100%;
 }
 .g-foot{
 
@@ -106,14 +117,36 @@ li {
     line-height: 30px;
   }
 }
+.m-td-pop{
+    display: none;
+    position:absolute;
+    /*left: 5px;
+    top:5px;*/
+    li{
+        height: 34px;
+        line-height: 34px;
+    }
+    &.l1{
+        left:0
+    }
+    &.l2{
+        left:23px
+    }
+    &.l3{
+        left:40px
+    }
+}
 .m-side{
   position: absolute;
   left: 0;
   width: 160px;
   background-color: @side;
+  height: 100%;
   ul{
-    margin-bottom: 180px;
     border-bottom: 1px solid @side-li;
+    position: fixed;
+    left: 0;
+    top: 68px;
   }
   li{
     border-top: 1px solid #38383d;
@@ -122,15 +155,15 @@ li {
   a{
     display: inline-block;
     width: 160px;
-    height: 56px;
-    line-height: 56px;
+    height: 55px;
+    line-height: 55px;
     color:#fff;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
     background-color: @side-li;
     position: relative;
     &:hover{
-      color:#4b7ca5;
+      color:#2f4b7a;
       background-color: @main-b3;
     }
   }
@@ -138,7 +171,7 @@ li {
     display: none
   }
   .z-active{
-    color:#4b7ca5;
+    color:#2f4b7a;
     background-color: @main-b3;
     .u-icon-arrow-left{
       display: block;
@@ -155,26 +188,30 @@ li {
     margin-left: 18px;
   }
 }
+
 .m-main{
   background-color: #ecebf0;
   /*padding-bottom: 54px;*/
   position: relative;
   padding-bottom: 20px;
-  height: 100%;
+  /*height: 100%;*/
+  border-top: 1px solid transparent;
+ /* margin-top: -1px;*/
   /*margin-left: 160px;*/
 }
 .m-crumb{
-  height: 38px;
-  line-height: 38px;
+  margin-top: 68px;
+  height: 40px;
+  line-height: 40px;
   background-color: #f3f2fe;
   margin-left: 160px;
   padding-left: 20px;
-  color:#CCC;
+  color:#b6b6b7;
   span{
     font-size: 12px;
   }
   a{
-    color: #ccc;
+    color: #b6b6b7;
     &:hover{
       color: #50c5fd
     }
@@ -186,19 +223,19 @@ li {
 
 .m-wrap{
   background-color: #fff;
-  margin-top: 11px;
+  margin-top: 10px;
   margin-left: 172px;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+ /* padding-bottom: 20px;*/
   margin-right: 10px;
   /*margin-left: 12px;*/
 }
 .m-t{
-  background-color: #dedbec;
+  background-color: #dedcec;
   span{
     height: 16px;
     line-height: 16px;
-    margin-left: 22px;
+    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
@@ -210,6 +247,10 @@ li {
 }
 .m-c{
   background-color: #fff;
+  min-height: 700px;
+    &.snd{
+        min-height: inherit;
+    }
 }
 .m-t2nd{
   margin-top: 20px;
@@ -262,7 +303,8 @@ li {
 .m-btn-box{
   /*margin-right: 73px;*/
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 40px;
   .u-btn{
     margin-left: 10px;
   }
@@ -276,6 +318,9 @@ li {
     border:0;
     text-align: center;
   }
+  .w-5{
+        width: 55px;
+  }
   .w-10{
     width: 180px;
   }
@@ -288,6 +333,12 @@ li {
   .table{
     margin-bottom: 15px;
   }
+    .z-no{
+        color: #e9a1a8
+    }
+    .z-yes{
+        color: #89c094;
+    }
 }
 .pagination{
   margin-top: 0;
