@@ -44,7 +44,7 @@
       </ul>
     </div>
     <div class="m-login j-login">
-      <i class="u-icon"></i>
+      <i class="u-icon u-icon-host"></i>
       <span class="host">用户名</span>
       <i class="u-icon-down"></i>
       <div class="m-login-pop j-login-pop">
@@ -73,7 +73,7 @@
       </ul>
     </div>
       <div class="m-crumb">
-        <i></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">车辆定价</a>
+        <i class="u-icon u-icon-location "></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">车辆定价</a>
       </div>
       <div class="m-wrap">
         <div class="m-t">
@@ -84,50 +84,54 @@
           <div class="row">
           <div class="m-input-box ">
             <div class="f-cb">
-            <dl class="col-md-4 u-dl">
+            <div class="u-icon-down-handle j-contracts">
+              <div class="u-icon-down "></div>
+            </div>
+
+            <dl class="col-md-4 u-dl" xg-data-select="0">
               <dt class="large">品牌：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
-            <dl class="col-md-4 u-dl">
+            <dl class="col-md-4 u-dl" xg-data-select="1">
               <dt class="large">车系：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
-            <dl class="col-md-4 u-dl">
+            <dl class="col-md-4 u-dl" xg-data-select="2">
               <dt class="large">车型：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
-            <dl class="col-md-4 u-dl">
+            <dl class="col-md-4 u-dl" xg-data-select="3">
               <dt class="large">发动机排量：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
-                <dl class="col-md-4 u-dl">
+                <dl class="col-md-4 u-dl" xg-data-select="4">
               <dt class="large">車牌：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
                  </dl>
-                <dl class="col-md-4 u-dl">
+                <dl class="col-md-4 u-dl" xg-data-select="5">
               <dt class="large">車牌：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
-            <dl class="col-md-4 u-dl">
+            <dl class="col-md-4 u-dl" xg-data-select="6">
               <dt class="large">行驶里程：</dt>
               <dd>
                 <input type="text" class="u-input u-input-normal">
               </dd>
             </dl>
-            <dl class="col-md-4 u-dl ">
+            <dl class="col-md-4 u-dl " xg-data-select="7">
               <dt class="large">日期：</dt>
               <dd>
                 <input type="text" class="u-input u-input-small"><span class="s-fs-s">-</span>
@@ -343,7 +347,7 @@
               </tr>
 
             </table>
-            <div class="f-fl">
+            <div class="f-fl j-add">
               <a href="javascript:void(0);" class="u-btn btn  btn-main"><span>+</span>增加车辆查询</a>
             </div>
             <div class="f-fr">
@@ -392,27 +396,79 @@
 
 //    首页的导航和侧边栏
     //侧边栏的隐藏
-        $('.m-line').on('click',function(){
-          $('.m-line').hide();
-          $('.m-side').show().addClass('j-side-hide');
-          $('.m-crumb').css({
-             marginLeft: '160px'
-          })
-          $('.m-wrap').css({
-             marginLeft: '172px'
-          })
-          $('.j-side-hide').on('click',function(){
-            $('.m-line').show();
-            $('.m-side').hide();
-            $('.m-crumb').css({
-               marginLeft: '0px'
-            })
-            $('.m-wrap').css({
-               marginLeft: '12px'
-            })
-          })
-        });
-
+    $('.m-line').on('click',function(){
+      $('.m-line').hide();
+      $('.m-side').show().addClass('j-side-hide');
+      $('.m-crumb').css({
+         marginLeft: '160px'
+      })
+      $('.m-wrap').css({
+         marginLeft: '172px'
+      })
+      $('.j-side-hide').on('click',function(){
+        $('.m-line').show();
+        $('.m-side').hide();
+        $('.m-crumb').css({
+           marginLeft: '0px'
+        })
+        $('.m-wrap').css({
+           marginLeft: '12px'
+        })
+      })
+    });
+    //隐藏input选项
+    var stat='3,4,5';//传入参数
+    $('.j-contracts').on('click',function(){
+       var arrs=stat.split(',');
+      if($(this).find('.u-icon-down').hasClass('z-active')){
+        $(this).find('.u-icon-down').removeClass('z-active');
+        for(var i=0;i<arrs.length;i++){
+        $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').show();
+        }
+      }else{
+        $(this).find('.u-icon-down').addClass('z-active');
+        for(var i=0;i<arrs.length;i++){
+          $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').hide();
+        }
+      }
+    });
+    //增加按钮悬浮
+    (function(){
+      var isTop=$('.j-add').offset().top;
+      console.log('isTop: '+isTop);
+      var addOffset=$('.j-add').offset().top;
+      var winHeight=$('body').get(0).offsetHeight;
+        console.log('winHeight: '+winHeight);
+      var isScrollTop=$('body').scrollTop();
+      console.log('isScrollTop: '+isScrollTop);
+      var allHeight=$('body').get(0).scrollHeight;
+      console.log('allHeight: '+allHeight);
+      var temp1=allHeight-winHeight-isScrollTop;
+      console.log(temp1)
+     if(temp1>=120){
+          $('.j-add').addClass('f-fd20');
+        }else{
+          $('.j-add').removeClass('f-fd20');
+        }
+      })();
+    $(window).on('scroll',function(){
+      var isTop=$('.j-add').offset().top;
+      console.log('isTop: '+isTop);
+      var addOffset=$('.j-add').offset().top;
+      var winHeight=$('body').get(0).offsetHeight;
+        console.log('winHeight: '+winHeight);
+      var isScrollTop=$('body').scrollTop();
+      console.log('isScrollTop: '+isScrollTop);
+      var allHeight=$('body').get(0).scrollHeight;
+      console.log('allHeight: '+allHeight);
+      var temp1=allHeight-winHeight-isScrollTop;
+      console.log(temp1)
+     if(temp1>=120){
+          $('.j-add').addClass('f-fd20');
+        }else{
+          $('.j-add').removeClass('f-fd20');
+        }
+    });
 
   </script>
 </body>
