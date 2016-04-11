@@ -1,4 +1,4 @@
-// out: ../res/global.css, compress: true, strictMath: true, cleancss:true, autoprefixer:true
+// out: ../res/global.css, compress: false, strictMath: true, cleancss:false, autoprefixer:true
 @import './bootstrap-alter';
 @import './btn';
 @import './function';
@@ -72,6 +72,7 @@ li {
   }
   .z-active{
     background-color: @main-b;
+    border-radius: 5px 5px 0 0;
   }
 }
 .m-login{
@@ -145,6 +146,13 @@ li {
       right: 0;
       top:21px;
     }
+    .u-arrow-right{
+      display: block;
+    }
+  }
+  .tab{
+    vertical-align: top;
+    margin-left: 18px;
   }
 }
 .m-main{
@@ -256,7 +264,7 @@ li {
   margin-bottom: 20px;
   margin-left: 20px;
   .u-btn{
-    margin-left: 25px;
+    margin-left: 10px;
   }
 }
 .m-table{
