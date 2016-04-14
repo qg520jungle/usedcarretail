@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" id="viewport" content="width=400">
+  <meta name="keywords" content="采购申请" />
+  <meta name="description" content="采购申请" />
+  <title>采购申请</title>
+  <!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="res/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="res/fonts/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="res/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+  <link href="res/bootstrap.css" rel="stylesheet">
+  <link href="res/global.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <!--[if lte IE 9]>
+  <script src="lib/respond.min.js"></script>
+  <script src="lib/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="res/bootstrap.min.js"></script>
+  <!--<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />-->
+  <!--<link href="favicon.ico" rel="bookmark icon" />-->
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="res/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="res/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="res/js/ace-extra.min.js"></script>
+
+
+</head>
+<body>
+  <div class="g-head f-cb">
+   <div class="m-logo">
+     <a href="index.html">
+          <!--<i class="u-icon u-icon-logo"></i>-->
+          <span class="u-logo">二手车零售系统</span>
+      </a>
+   </div>
+    <div class="m-nav">
+      <ul class="f-cb">
+        <li><a href="###" class="z-active">首页</a></li>
+        <li><a href="###">采购</a></li>
+        <li><a href="###">库存</a></li>
+        <li><a href="###">定价中心</a></li>
+        <li><a href="###">销售</a></li>
+        <li><a href="###">客户</a></li>
+        <li><a href="###">整备</a></li>
+        <li><a href="###">系统管理</a></li>
+      </ul>
+    </div>
+    <div class="m-login f-cb">
+      <div class="green f-fl f-mr20 f-pr">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical s-white"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									5 Messages
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Alex:</span>
+														Ciao sociis natoque penatibus et auctor ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>a moment ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Susan:</span>
+														Vestibulum id ligula porta felis euismod ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>20 minutes ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Bob:</span>
+														Nullam quis risus eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>3:15 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kate:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Fred:</span>
+														Vestibulum id penatibus et auctor  ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>10:09 am</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										See all messages
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+      <div class="j-login f-fr">
+      <i class="u-icon u-icon-host"></i>
+      <span class="host">用户名</span>
+      <i class="u-icon-down"></i>
+      <div class="m-login-pop j-login-pop">
+        <ul>
+          <li><a href="" class="u-press">修改密码</a></li>
+          <li><a href="" class="u-press">退出系统</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="g-body f-cb">
+
+    <div class="m-main">
+    <div class="m-line "></div>
+    <div class="m-side j-side">
+      <ul class="">
+        <li><a href="###" class=""><i class=" iconfont chading">&#xe605;</i><span class="tab">车辆查定</span><div class="u-arrow-right"></div></a></li>
+        <li><a href="###" class="z-active"><i class="iconfont cheliangdingjia">&#xe603;</i><span class="tab">车辆定价</span><div class="u-arrow-right"></div></a></li>
+        <li><a href="###"><i class=" iconfont dingjiashenhe">&#xe604;</i></i><span class="tab">定价审核</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont caigoushenqing">&#xe602;</i><span class="tab">采购申请</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont caigoushenpi">&#xe601;</i><span class="tab">采购审批</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont caigouhetong">&#xe600;</i><span class="tab">采购合同</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont chading">&#xe605;</i><span class="tab">采购付款</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont chading">&#xe605;</i><span class="tab">采购过户</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont chading">&#xe605;</i><span class="tab">采购转移</span></a><div class="u-arrow-right"></div></li>
+      </ul>
+    </div>
+      <div class="m-crumb">
+        <i class="u-icon u-icon-location "></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">采购申请</a>
+      </div>
+      <div class="m-wrap">
+        <div class="m-t">
+          <span>申请信息</span>
+        </div>
+        <div class="m-c snd">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="m-input-box ">
+            <div class="f-cb">
+            <div class="u-icon-down-handle j-contracts">
+              <div class="u-icon-down "></div>
+            </div>
+
+            <dl class="col-md-4 u-dl" xg-data-select="0">
+              <dt class="large"><span class="s-red">* </span>车型：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="1">
+              <dt class="large"><span class="s-red">* </span>客户姓名：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="2">
+              <dt class="large"><span class="s-red">* </span>手机号码：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="3">
+              <dt class="large"><span class="s-red">* </span>收购方式：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+                <dl class="col-md-4 u-dl" xg-data-select="4">
+              <dt class="large"><span class="s-red">* </span>采购价格：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+             </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>意向级别：</dt>
+              <dd>
+                <input type="text" class="u-input u-input-normal">
+              </dd>
+            </dl>
+            <dl class="col-md-12 u-dl" xg-data-select="6">
+              <dt class="large">采购单：</dt>
+              <dd class="f-vt">
+                <ul class="f-cb m-box-img">
+                  <li class="f-fl">
+                    <div class="box-img">
+                      <img src="http://lorempixel.com/70/70/" alt="">
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">采购单1</span>
+                    </div>
+                  </li>
+                  <li class="f-fl">
+                    <div class="box-img">
+                      <img src="http://lorempixel.com/70/70/" alt="">
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">采购单2</span>
+                    </div>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            </div>
+
+
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <div class="m-wrap">
+        <div class="m-t">
+          <span>汇款信息</span>
+        </div>
+        <div class="m-c snd">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="m-input-box ">
+            <div class="f-cb">
+            <div class="u-icon-down-handle j-contracts">
+              <div class="u-icon-down "></div>
+            </div>
+
+            <dl class="col-md-4 u-dl" xg-data-select="0">
+              <dt class="large"><span class="s-red">* </span>车型：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="1">
+              <dt class="large"><span class="s-red">* </span>年款：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="2">
+              <dt class="large"><span class="s-red">* </span>行驶里程：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="3">
+              <dt class="large"><span class="s-red">* </span>车身颜色：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+                <dl class="col-md-4 u-dl" xg-data-select="4">
+              <dt class="large"><span class="s-red">* </span>车主姓名：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+             </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>车主电话：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-12 u-dl" xg-data-select="6">
+              <dt class="large">车辆图片：</dt>
+              <dd class="f-vt">
+                <ul class="f-cb m-box-img">
+                  <li class="f-fl">
+                    <div class="box-img">
+                      <img src="http://lorempixel.com/70/70/" alt="">
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">车头</span>
+                    </div>
+                  </li>
+                  <li class="f-fl">
+                    <div class="box-img">
+                      <img src="http://lorempixel.com/70/70/" alt="">
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">名牌</span>
+                    </div>
+                  </li>
+                  <li class="f-fl add">
+                    <div class="box-img">
+                      <input type="file" class="u-input-file">
+                      <div class="u-fade j-icon-add">
+                        <i class="u-icon u-icon-add"></i>
+                      </div>
+                      <!--<img src="" alt="">-->
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">添加</span>
+                    </div>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            </div>
+
+
+          </div>
+          <div class="f-fl f-mb30 f-ml20">
+              <a href="javascript:void(0);" class="u-btn btn  btn-main"><span></span>文件导入</a>
+              <a href="javascript:void(0);" class="u-btn btn  btn-main"><span></span>文件导出</a>
+          </div>
+          <div class="f-fr f-mb30 f-mr20">
+              <a href="javascript:void(0);" class="u-btn btn  btn-main"><span></span>文件保存</a>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="g-foot"></div>
+  <script>
+    //退出系统
+    $('.j-login').on('mouseover',function(){
+      $('.j-login-pop').show();
+    });
+    $('.j-login').on('mouseout',function(){
+      $('.j-login-pop').hide();
+    });
+
+
+
+//    首页的导航和侧边栏
+    //侧边栏的隐藏
+    $('.m-line').on('click',function(){
+      $('.m-line').hide();
+      $('.m-side').show().addClass('j-side-hide');
+      $('.m-crumb').css({
+         marginLeft: '160px'
+      })
+      $('.m-wrap').css({
+         marginLeft: '172px'
+      })
+      $('.j-side-hide').on('click',function(){
+        $('.m-line').show();
+        $('.m-side').hide();
+        $('.m-crumb').css({
+           marginLeft: '0px'
+        })
+        $('.m-wrap').css({
+           marginLeft: '12px'
+        })
+      })
+    });
+    //隐藏input选项
+    var stat='3,4,5';//传入参数
+    $('.j-contracts').on('click',function(){
+       var arrs=stat.split(',');
+      if($(this).find('.u-icon-down').hasClass('z-active')){
+        $(this).find('.u-icon-down').removeClass('z-active');
+        for(var i=0;i<arrs.length;i++){
+        $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').show();
+        }
+      }else{
+        $(this).find('.u-icon-down').addClass('z-active');
+        for(var i=0;i<arrs.length;i++){
+          $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').hide();
+        }
+      }
+    });
+    //增加按钮悬浮
+
+
+    //图片添加
+    $('.j-icon-add').on('click',function(){
+      $('.u-input-file').click();
+    });
+  </script>
+</body>
+</html>

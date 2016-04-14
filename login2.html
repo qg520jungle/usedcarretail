@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="f-wh100">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" id="viewport" content="width=400">
+  <meta name="keywords" content="登陆页" />
+  <meta name="description" content="登陆页" />
+  <title>登陆页</title>
+  <link href="res/bootstrap.css" rel="stylesheet">
+  <link href="res/global.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <!--[if lte IE 9]>
+  <script src="lib/respond.min.js"></script>
+  <script src="lib/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="res/bootstrap.min.js"></script>
+  <!--<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />-->
+  <!--<link href="favicon.ico" rel="bookmark icon" />-->
+</head>
+<body class="f-wh100">
+  <div class="g-head mini f-cb">
+    <i class="u-logo-title f-fl"></i>
+    <div class="m-login-title f-fl">
+      <span class="tt2">二手车零售系统</span>
+      <span class="tt1">二手车零售系统</span>
+    </div>
+  </div>
+  <div class="g-body u-logon f-pr  u-logon-bg mini">
+    <div class="m-login-left"></div>
+    <div class="m-logon-bg-shadow mini"></div>
+    <div class="m-logon-bg mini"></div>
+    <div class="m-logon mini">
+      <div class="form">
+        <div class="u-logon-input">
+          <span class="tt">账号：</span>
+          <input type="text" class="cc">
+        </div>
+        <div class="u-logon-input">
+          <span class="tt">密码：</span>
+          <input type="password" class="cc">
+        </div>
+        <!--<div class="u-logon-input short">
+          <span class="tt">验证码：</span>
+          <input type="text" class="cc">
+          <div class="yzm"></div>
+        </div>-->
+        <div class="u-logon-operation f-cb">
+          <div class="f-fl">
+            <i class="u-icon-go z-active j-go"></i><span class="tt">下次自动登录</span>
+          </div>
+          <a href="###" class="f-fr cc">忘记密码</a>
+        </div>
+        <div class="u-logon-btnbox mini">
+          <span class="u-btn u-btn-logon">登录</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="g-foot mini">
+    <div>东风日产</div>
+    <div>Copyright &copy; 2014 DONGFENG Nissan CO.LTD</div>
+  </div>
+  <script>
+    $('.j-go').on('click',function(){
+      if($(this).hasClass('z-active')){
+        $(this).removeClass('z-active')
+      }else{
+        $(this).addClass('z-active')
+      }
+    })
+  </script>
+</body>
+</html>
