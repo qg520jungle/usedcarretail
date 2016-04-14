@@ -6,9 +6,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="viewport" id="viewport" content="width=400">
-  <meta name="keywords" content="首页" />
-  <meta name="description" content="首页" />
-  <title>首页</title>
+  <meta name="keywords" content="采购首页" />
+  <meta name="description" content="采购首页" />
+  <title>采购首页</title>
   <!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="res/font-awesome/4.2.0/css/font-awesome.min.css" />
 
@@ -209,309 +209,177 @@
       <div class="m-crumb">
         <i class="u-icon u-icon-location "></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">车辆定价</a>
       </div>
-      <div class="m-wrap">
-        <div class="m-t">
-          <span>初次定价</span>
-        </div>
-        <div class="m-c">
+
         <div class="container-fluid">
           <div class="row">
-          <div class="m-input-box ">
-            <div class="f-cb">
-            <div class="u-icon-down-handle j-contracts">
-              <div class="u-icon-down "></div>
-            </div>
+      <div class="m-wrap half col-md-8">
+        <div class="m-t">
+          <span>库存情况</span>
+        </div>
+        <div class="m-c snd">
+          <div class="m-bar-graph">
+           <!-- 这里是图表 m-bar-bg 这个div需要删除-->
+           <div class="m-bar-bg">
+              <ul class="bg">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <div class="m-bar">
 
-            <dl class="col-md-4 u-dl" xg-data-select="0">
-              <dt class="large">品牌：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-            <dl class="col-md-4 u-dl" xg-data-select="1">
-              <dt class="large">车系：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-            <dl class="col-md-4 u-dl" xg-data-select="2">
-              <dt class="large">车型：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-            <dl class="col-md-4 u-dl" xg-data-select="3">
-              <dt class="large">发动机排量：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-                <dl class="col-md-4 u-dl" xg-data-select="4">
-              <dt class="large">車牌：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-                 </dl>
-                <dl class="col-md-4 u-dl" xg-data-select="5">
-              <dt class="large">車牌：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-            <dl class="col-md-4 u-dl" xg-data-select="6">
-              <dt class="large">行驶里程：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-normal">
-              </dd>
-            </dl>
-            <dl class="col-md-4 u-dl " xg-data-select="7">
-              <dt class="large">日期：</dt>
-              <dd>
-                <input type="text" class="u-input u-input-small"><span class="s-fs-s">-</span>
-                <input type="text" class="u-input u-input-small">
-              </dd>
-            </dl>
+              </div>
             </div>
-           <!-- <div class="m-btn-box f-fr col-md-3">
-              <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white">取消</a>
-            </div>-->
-             <dl class="col-md-4 u-dl f-fr">
-              <dt class="large"></dt>
-              <dd class="btn-psearch">
-                 <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white ">取消</a>
-              </dd>
-            </dl>
           </div>
-          <div class="m-table">
-            <table class="table table-bordered">
-              <tr>
-                <th></th>
-                <th>品牌</th>
-                <th>车系</th>
-                <th class="w-10">车型名称</th>
-                <th>车身颜色</th>
-                <th>出厂日期</th>
-                <th>购买时间</th>
-                <th>行驶里程</th>
-                <th>客户姓名</th>
-                <th>联系电话</th>
-                <th>采购专员</th>
-                <th class="w-5">状态</th>
-                <th>操作</th>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-no">未报价</td>
-                <td><i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
-                <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
-                  </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-yes">已报价</td>
-                <td>
-            <i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
-            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
-                </td>
-              </tr>
-                 <tr>
-                <td>2</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-yes">已报价</td>
-                <td>
-           <i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
-            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
-                     </td>
-              </tr>
-                 <tr>
-                <td>2</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-yes">已报价</td>
-                <td><i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
-            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i></td>
-              </tr>
-                 <tr>
-                <td>2</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-yes">已报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-               <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td  class="z-no">未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-no">未报价</td>
-                <td>
-            <i class="u-icon glyphicon glyphicon-edit" title="编辑"> </i>
-            <i class="u-icon glyphicon glyphicon-trash" title="删除"></i>
-                  </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-no">未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-           <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-no">未报价</td>
-                <td><i class="u-icon u-icon-m"></i>
-                <i class="u-icon u-icon-i"></i>
-                <i class="u-icon u-icon-b"></i></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>日产</td>
-                <td>轩逸</td>
-                <td>2.0 XV CVT Prem 豪华版</td>
-
-                <td>白色</td>
-                <td>2015/12/31</td>
-                <td>2015/12/31</td>
-                <td>3万</td>
-                <td>张三</td>
-                <td>13812341234</td>
-                <td>赵六</td>
-                <td class="z-no">未报价</td>
-                <td><i class="u-icon"></i>
-                <i class="u-icon"></i>
-              <i class="u-icon glyphicon glyphicon-edit"></i></td>
-              </tr>
-
-            </table>
-            <div class="f-fl j-add">
-              <a href="javascript:void(0);" class="u-btn btn  btn-main"><span>+</span>增加车辆查询</a>
-            </div>
-            <div class="f-fr">
-              <nav>
-                <ul class="pagination">
-                  <li>
-                    <a href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="active"><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li>
-                    <a href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-
-            <div class="f-fr">
-              <span class="u-page">1-10,共100条</span>
-            </div>
-           </div>
+        </div>
+        </div>
+        <div class="m-wrap half col-md-2 last">
+        <div class="m-t">
+          <span>本月统计</span>
+        </div>
+          <div class="m-c snd">
+            <ul class="m-account">
+              <li class="s-y">
+                <div class="t">查定量</div>
+                <div class="c">
+                  <i class="u-icon u-icon-chading"></i>
+                  <span>1235</span>
+                </div>
+              </li>
+              <li class="s-b">
+                <div class="t">客户量</div>
+                <div class="c">
+                  <i class="u-icon u-icon-kehu"></i>
+                  <span>1235</span>
+                </div>
+              </li>
+              <li class="s-g">
+                <div class="t">采购量</div>
+                <div class="c">
+                  <i class="u-icon u-icon-caigou"></i>
+                  <span>1235</span>
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
+        </div>
+      </div>
+
+
+        <div class="container-fluid">
+          <div class="row">
+      <div class="m-wrap half col-md-5">
+        <div class="m-t">
+          <span>待办事项</span>
+        </div>
+        <div class="m-c snd">
+          <ul class="m-item-list">
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批：</span>
+                <span>待办项</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批：</span>
+                <span>待办项</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批：</span>
+                <span>待办项</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批：</span>
+                <span>待办项</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批：</span>
+                <span>待办项</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+          </ul>
+         </div>
           </div>
+          <div class="m-wrap half col-md-5 last">
+        <div class="m-t">
+          <span>消息提醒</span>
+        </div>
+        <div class="m-c snd">
+        <ul class="m-item-list">
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批通过</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批通过</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批通过</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批通过</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+            <li class="f-cb">
+              <div class="t f-fl">
+                <span>采购审批通过</span>
+              </div>
+              <div class="c f-fr">
+                <span class="u-number">50</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
         </div>
       </div>
     </div>
