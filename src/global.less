@@ -2,10 +2,10 @@
 @import './bootstrap-alter';
 @import './iconfont';
 @import './btn';
-@import './function';
 @import './skin';
 @import './u-icon';
 @import './unit';
+@import './function';
 @color1: #333;
 @color6: #666;
 @color2: #999;
@@ -306,7 +306,6 @@ li {
   padding-bottom: 20px;
   position: relative;
   .u-icon-down-handle{
-
     width: 10px;
     height: 10px;
     cursor: pointer;
@@ -322,7 +321,7 @@ li {
       top: 5px;
     }
   }
-    .m-btn-box{
+  .m-btn-box{
     margin-right: 73px;
   }
   .m-text-box{
@@ -332,11 +331,6 @@ li {
   }
   .dl-col2{
     width: 500px;
-  }
-  .u-icon-dui{
-    position: absolute;
-    top: 4px;
-    right: -21px;
   }
 }
 
@@ -550,7 +544,9 @@ li {
 }
 
 .m-tab-all{
-
+  .nav li a{
+    padding: 10px 55px;
+  }
 }
 .m-tab{
   margin-top: 10px;
@@ -737,6 +733,45 @@ li {
   .t{
     font-size: 13px;
     color: #666;
+  }
+}
+.m-t-bar{
+  display: inline-block;
+  width: 60%;
+  vertical-align: middle;
+  margin-left: 20px;
+  .progress{
+    margin-bottom: inherit;
+  }
+}
+.m-info-tt{
+  background-color: #d0e8ff;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 24px;
+  border-radius: 5px;
+  .s-strong{
+    padding: 0 5px;
+  }
+}
+.m-check-box{
+  width: 208px;
+  vertical-align: middle;
+  &.lang{
+    width: 238px;
+  }
+  .left{
+    float: left;
+    cursor: pointer
+  }
+  .right{
+    float: right;
+    cursor: pointer
+  }
+  .s-text{
+    padding: 0 10px;
   }
 }
 

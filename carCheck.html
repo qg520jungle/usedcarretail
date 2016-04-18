@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" id="viewport" content="width=400">
+  <meta name="keywords" content="车辆查定" />
+  <meta name="description" content="车辆查定" />
+  <title>车辆查定</title>
+  <!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="res/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="res/fonts/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="res/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+  <link href="res/bootstrap.css" rel="stylesheet">
+  <link href="res/global.css" rel="stylesheet">
+  <script src="lib/jquery.js"></script>
+  <!--[if lte IE 9]>
+  <script src="lib/respond.min.js"></script>
+  <script src="lib/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="res/bootstrap.min.js"></script>
+  <!--<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />-->
+  <!--<link href="favicon.ico" rel="bookmark icon" />-->
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="res/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="res/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="res/js/ace-extra.min.js"></script>
+
+
+</head>
+<body>
+  <div class="g-head f-cb">
+   <div class="m-logo">
+     <a href="index.html">
+          <!--<i class="u-icon u-icon-logo"></i>-->
+          <span class="u-logo">二手车零售系统</span>
+      </a>
+   </div>
+    <div class="m-nav">
+      <ul class="f-cb">
+        <li><a href="###" class="z-active">首页</a></li>
+        <li><a href="###">采购</a></li>
+        <li><a href="###">库存</a></li>
+        <li><a href="###">定价中心</a></li>
+        <li><a href="###">销售</a></li>
+        <li><a href="###">客户</a></li>
+        <li><a href="###">整备</a></li>
+        <li><a href="###">系统管理</a></li>
+      </ul>
+    </div>
+    <div class="m-login f-cb">
+      <div class="green f-fl f-mr20 f-pr">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="ace-icon fa fa-envelope icon-animated-vertical s-white"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="ace-icon fa fa-envelope-o"></i>
+									5 Messages
+								</li>
+
+								<li class="dropdown-content">
+									<ul class="dropdown-menu dropdown-navbar">
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Alex:</span>
+														Ciao sociis natoque penatibus et auctor ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>a moment ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Susan:</span>
+														Vestibulum id ligula porta felis euismod ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>20 minutes ago</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Bob:</span>
+														Nullam quis risus eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>3:15 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Kate:</span>
+														Ciao sociis natoque eget urna mollis ornare ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>1:33 pm</span>
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="clearfix">
+												<img src="res/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<span class="msg-body">
+													<span class="msg-title">
+														<span class="blue">Fred:</span>
+														Vestibulum id penatibus et auctor  ...
+													</span>
+
+													<span class="msg-time">
+														<i class="ace-icon fa fa-clock-o"></i>
+														<span>10:09 am</span>
+													</span>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</li>
+
+								<li class="dropdown-footer">
+									<a href="inbox.html">
+										See all messages
+										<i class="ace-icon fa fa-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+      <div class="j-login f-fr">
+      <i class="u-icon u-icon-host"></i>
+      <span class="host">用户名</span>
+      <i class="u-icon-down"></i>
+      <div class="m-login-pop j-login-pop">
+        <ul>
+          <li><a href="" class="u-press">修改密码</a></li>
+          <li><a href="" class="u-press">退出系统</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="g-body f-cb">
+
+    <div class="m-main">
+    <div class="m-line "></div>
+    <div class="m-side j-side">
+      <ul class="">
+        <li><a href="###" class=""><i class=" iconfont chading">&#xe605;</i><span class="tab">车辆查定</span><div class="u-arrow-right"></div></a></li>
+        <li><a href="###" class="z-active"><i class="iconfont cheliangdingjia">&#xe603;</i><span class="tab">车辆定价</span><div class="u-arrow-right"></div></a></li>
+        <li><a href="###"><i class=" iconfont dingjiashenhe">&#xe604;</i></i><span class="tab">定价审核</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont caigoushenqing">&#xe602;</i><span class="tab">采购申请</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont caigoushenpi">&#xe601;</i><span class="tab">采购审批</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont caigouhetong">&#xe600;</i><span class="tab">采购合同</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont chading">&#xe605;</i><span class="tab">采购付款</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont chading">&#xe605;</i><span class="tab">采购过户</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont chading">&#xe605;</i><span class="tab">采购转移</span></a><div class="u-arrow-right"></div></li>
+      </ul>
+    </div>
+      <div class="m-crumb">
+        <i class="u-icon u-icon-location "></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">车辆查定</a>
+      </div>
+      <div class="m-wrap">
+        <div class="m-t">
+          <span>客户信息</span>
+          <div class="m-t-bar">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <span class="sr-only">60% Complete</span>
+              </div>
+            </div>
+         </div>
+        </div>
+        <div class="m-c snd">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="m-input-box ">
+            <div class="f-cb">
+            <div class="u-icon-down-handle j-contracts">
+              <div class="u-icon-down "></div>
+            </div>
+
+            <dl class="col-md-4 u-dl" xg-data-select="0">
+              <dt class="large"><span class="s-red">* </span>姓名：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="1">
+              <dt class="large"><span class="s-red">* </span>电话：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="2">
+              <dt class="large"><span class="s-red">* </span>意向级别：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="3">
+              <dt class="large"><span class="s-red">* </span>性别：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+                <dl class="col-md-4 u-dl" xg-data-select="4">
+              <dt class="large"><span class="s-red">* </span>固定电话：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+                 </dl>
+                <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>身份证号：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="6">
+              <dt class="large"><span class="s-red">* </span>邮箱：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-tan"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="6">
+              <dt class="large"><span class="s-red">* </span>推荐人：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-cuo"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-12 u-dl " xg-data-select="7">
+              <dt class="large"><span class="s-red">* </span>地址：</dt>
+              <dd>
+                <div class="u-input u-input-small f-pr">123<i class="u-icon-down-right"></i></div><span class="s-img f-pd10">省</span>
+                <div class="u-input u-input-small f-pr"><i class="u-icon-down-right"></i></div><span class="s-img f-pd10">市</span>
+                <div class="u-input u-input-small f-pr"><i class="u-icon-down-right"></i></div><span class="s-img f-pd10">县/区</span>
+                <input type="text" class="u-input u-input-large"><span class="s-img f-pd10">街道</span>
+
+              </dd>
+            </dl>
+            </div>
+           <!-- <div class="m-btn-box f-fr col-md-3">
+              <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white">取消</a>
+            </div>-->
+
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="m-wrap">
+        <div class="m-t">
+          <span>车辆信息</span>
+          <div class="m-t-bar">
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              <span class="sr-only">60% Complete</span>
+              </div>
+            </div>
+         </div>
+        </div>
+        <div class="m-c snd">
+        <div class="container-fluid">
+          <div class="row">
+          <div class="m-info-tt">
+            <p>
+              宝马5系：该车系可用库存<span class="s-strong">20</span>辆，采购意向数<span class="s-strong">8</span>辆，销售意向数<span class="s-strong">10</span>辆
+            </p>
+          </div>
+          <div class="m-input-box ">
+            <div class="f-cb">
+            <div class="u-icon-down-handle j-contracts">
+              <div class="u-icon-down "></div>
+            </div>
+
+            <dl class="col-md-4 u-dl" xg-data-select="0">
+              <dt class="large"><span class="s-red">* </span>姓名：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal" value="张三"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="1">
+              <dt class="large"><span class="s-red">* </span>年款：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="2">
+              <dt class="large"><span class="s-red">* </span>行驶里程：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="3">
+              <dt class="large"><span class="s-red">* </span>车身颜色：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+                <dl class="col-md-4 u-dl" xg-data-select="4">
+              <dt class="large"><span class="s-red">* </span>车主姓名：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+                 </dl>
+                <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>车主电话：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+             <dl class="col-md-12 u-dl" xg-data-select="6">
+              <dt class="large">车辆图片：</dt>
+              <dd class="f-vt">
+                <ul class="f-cb m-box-img">
+                  <li class="f-fl">
+                    <div class="box-img">
+                      <img src="http://lorempixel.com/70/70/" alt="">
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">车头</span>
+                    </div>
+                  </li>
+                  <li class="f-fl">
+                    <div class="box-img">
+                      <img src="http://lorempixel.com/70/70/" alt="">
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">名牌</span>
+                    </div>
+                  </li>
+                  <li class="f-fl add">
+                    <div class="box-img">
+                      <input type="file" class="u-input-file">
+                      <div class="u-fade j-icon-add">
+                        <i class="u-icon u-icon-add"></i>
+                      </div>
+                      <!--<img src="" alt="">-->
+                    </div>
+                    <div class="box-tt">
+                      <span class="s-img">添加</span>
+                    </div>
+                  </li>
+                </ul>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>车牌号：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>发动机号：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>VIN码：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>登记日期：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>商业险：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+             <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>交强险：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>车船税：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>违章情况：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal-s"><i class="u-icon u-icon-dui"></i><a href="javascript" class="u-btn btn btn-s btn-main">违章查询</a>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>保养情况：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal-s"><i class="u-icon u-icon-dui"></i><a href="javascript" class="u-btn btn btn-s btn-main">保养查询</a>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>变速箱类型：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+             <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>环保标准：</dt>
+              <dd class="f-pr">
+                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>是否改装：</dt>
+              <dd class="m-check-box f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check dis"></div><span class="s-text">是</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check act"></div><span class="s-text">否</span>
+                </div>
+              </dd>
+            </dl>
+            <dl class="col-md-12 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>车标准配置：</dt>
+              <dd class="f-pr">
+                <div class="u-input u-input-row-s"></div><i class="u-icon u-icon-dui"></i><a href="javascript" class="u-btn btn btn-s btn-main">选择</a>
+              </dd>
+            </dl>
+            <dl class="col-md-12 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>主个性配置：</dt>
+              <dd class="f-pr">
+                <div class="u-input u-input-row-s"></div><i class="u-icon u-icon-dui"></i><a href="javascript" class="u-btn btn btn-s btn-main">选择</a>
+              </dd>
+            </dl>
+            <dl class="col-md-12 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red">* </span>附件和资料：</dt>
+              <dd class="f-pr">
+                <div class="u-input u-input-row-s"></div><i class="u-icon u-icon-dui"></i><a href="javascript" class="u-btn btn btn-s btn-main">选择</a>
+              </dd>
+            </dl>
+            <div class="col-md-12 u-dl f-cb" xg-data-select="5">
+              <div class=" m-tab-all f-cb">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">工部说明</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">外观</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">内饰</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">骨架-底盘</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+
+
+                    <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <div class="m-tab f-cb">
+        <div class="col-sm-6">
+          <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>转向系统：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act "></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+            <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>发动机：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act"></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+            <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>变速器：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act"></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+            <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>避震器：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act"></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+            <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>底盘行驶：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act"></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+            <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>制动器：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act"></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+            <dl class="col-md-11 u-dl" xg-data-select="5">
+              <dt class="large"><span class="s-red"> </span>排气系统：</dt>
+              <dd class="m-check-box lang f-cb j-check-box">
+                <div class="left j-check " xg-check="1">
+                  <div class="u-icon-check act "></div><span class="s-text">无异常</span>
+                </div>
+                <div class="right j-check" xg-check="0">
+                  <div class="u-icon-check dis"></div><span class="s-text">异常</span>
+                </div>
+              </dd>
+              <div class="u-input-t j-input-t f-hd">
+                <input type="text" value="" class="u-input u-input-large input-c">
+                <span class="input-t">备注：</span>
+              </div>
+            </dl>
+        </div>
+        <div class="col-sm-6">
+          <dl class="col-sm-11 u-dl">
+       <dt class="large">工况说明：</dt>
+        <dd>
+          <textarea class="u-input-largearea u-textarea ">
+          </textarea>
+        </dd>
+        </dl>
+        </div>
+
+        </div>
+
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+     <div class="m-tab  f-cb">
+     <div class="">
+         <span class="u-btn btn btn-main j-qm ">漆面检查</span>
+         <span class="u-btn btn btn-white j-cs">车身检查</span>
+     </div>
+     <div class="m-tab-qm">
+     <div class="m-fixedpoint  col-md-12">
+      <div class="m-msg-point col-md-6">
+        <ul class="">
+          <li><span>漆面检查</span></li>
+          <li class="u-msg v1" xg-static="v1">
+            <span>1.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v2" xg-static="v2">
+            <span>2.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v3" xg-static="v3">
+            <span>3.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v4" xg-static="v4">
+            <span>4.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v5" xg-static="v5">
+            <span>5.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v6" xg-static="v6">
+            <span>6.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v7" xg-static="v7">
+            <span>7.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v8" xg-static="v8">
+            <span>8.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v9" xg-static="v9">
+            <span>9.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v10" xg-static="v10">
+            <span>10.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v11" xg-static="v11">
+            <span>11.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v12" xg-static="v12">
+            <span>12.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v13" xg-static="v13">
+            <span>13.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v14 " xg-static="v14">
+            <span>14.</span><span>左前翼子板</span><i class="u-icon u-icon-dui"></i>
+          </li>
+          <li class="u-msg v15 z-active" xg-static="v15">
+            <span>15.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="m-img-point col-md-6">
+        <div class="u-point v1" xg-static="v1">位置点1</div>
+        <div class="u-point v2" xg-static="v2">位置点2</div>
+        <div class="u-point v3" xg-static="v3">位置点3</div>
+        <div class="u-point v4" xg-static="v4">位置点4</div>
+        <div class="u-point v5" xg-static="v5">位置点5</div>
+        <div class="u-point v6" xg-static="v6">位置点6</div>
+        <div class="u-point v7" xg-static="v7">位置点7</div>
+        <div class="u-point v8" xg-static="v8">位置点8</div>
+        <div class="u-point v9" xg-static="v9">位置点9</div>
+        <div class="u-point v10" xg-static="v10">位置点10</div>
+        <div class="u-point v11" xg-static="v11">位置点11</div>
+        <div class="u-point v12" xg-static="v12">位置点12</div>
+        <div class="u-point v13" xg-static="v13">位置点13</div>
+        <div class="u-point v14" xg-static="v14">位置点14</div>
+        <div class="u-point v15 z-active" xg-static="v15">位置点15</div>
+        <div class="u-img-pop"><img src="upload/da001_ta.jpg" alt="受伤部位"></div>
+      </div>
+     </div>
+     </div>
+     <div class="m-tab-cs f-hd">
+     <div class="m-fixedpoint  col-md-12">
+      <div class="m-msg-point col-md-6">
+        <ul class="">
+          <li><span>车身检查</span></li>
+          <li class="u-msg v1" xg-static="v1">
+            <span>1.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v2" xg-static="v2">
+            <span>2.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v3" xg-static="v3">
+            <span>3.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v4" xg-static="v4">
+            <span>4.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v5" xg-static="v5">
+            <span>5.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v6" xg-static="v6">
+            <span>6.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v7" xg-static="v7">
+            <span>7.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v8" xg-static="v8">
+            <span>8.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v9" xg-static="v9">
+            <span>9.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v10" xg-static="v10">
+            <span>10.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v11" xg-static="v11">
+            <span>11.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v12" xg-static="v12">
+            <span>12.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v13" xg-static="v13">
+            <span>13.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v14" xg-static="v14">
+            <span>14.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+          <li class="u-msg v15 z-active" xg-static="v15">
+            <span>15.</span><span>左前翼子板</span><i class="u-icon u-icon-cuo"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="m-img-point col-md-6">
+        <div class="u-point v1" xg-static="v1">位置点1</div>
+        <div class="u-point v2" xg-static="v2">位置点2</div>
+        <div class="u-point v3" xg-static="v3">位置点3</div>
+        <div class="u-point v4" xg-static="v4">位置点4</div>
+        <div class="u-point v5" xg-static="v5">位置点5</div>
+        <div class="u-point v6" xg-static="v6">位置点6</div>
+        <div class="u-point v7" xg-static="v7">位置点7</div>
+        <div class="u-point v8" xg-static="v8">位置点8</div>
+        <div class="u-point v9" xg-static="v9">位置点9</div>
+        <div class="u-point v10" xg-static="v10">位置点10</div>
+        <div class="u-point v11" xg-static="v11">位置点11</div>
+        <div class="u-point v12" xg-static="v12">位置点12</div>
+        <div class="u-point v13" xg-static="v13">位置点13</div>
+        <div class="u-point v14" xg-static="v14">位置点14</div>
+        <div class="u-point v15 z-active" xg-static="v15">位置点15</div>
+        <div class="u-img-pop"><img src="upload/da001_ta.jpg" alt="受伤部位"></div>
+      </div>
+
+     </div>
+     </div>
+
+    </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="messages"><div class="m-tab2">定高占位</div></div>
+    <div role="tabpanel" class="tab-pane" id="settings"><div class="m-tab2">定高占位</div></div>
+  </div>
+                       </div>
+            </div>
+             </div>
+
+             <dl class="col-md-4 u-dl col-md-offset-8">
+              <dt class="large"></dt>
+              <dd class="btn-psearch">
+                 <a href="javascript" class="u-btn btn btn-normal btn-main">保存</a> <a href="javascript" class="u-btn btn btn-normal btn-white ">取消</a>
+              </dd>
+            </dl>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="g-foot"></div>
+  <script>
+    //退出系统
+    $('.j-login').on('mouseover',function(){
+      $('.j-login-pop').show();
+    });
+    $('.j-login').on('mouseout',function(){
+      $('.j-login-pop').hide();
+    });
+
+
+
+//    首页的导航和侧边栏
+    //侧边栏的隐藏
+    $('.m-line').on('click',function(){
+      $('.m-line').hide();
+      $('.m-side').show().addClass('j-side-hide');
+      $('.m-crumb').css({
+         marginLeft: '160px'
+      })
+      $('.m-wrap').css({
+         marginLeft: '172px'
+      })
+      $('.j-side-hide').on('click',function(){
+        $('.m-line').show();
+        $('.m-side').hide();
+        $('.m-crumb').css({
+           marginLeft: '0px'
+        })
+        $('.m-wrap').css({
+           marginLeft: '12px'
+        })
+      })
+    });
+    //隐藏input选项
+    var stat='3,4,5';//传入参数
+    $('.j-contracts').on('click',function(){
+       var arrs=stat.split(',');
+      if($(this).find('.u-icon-down').hasClass('z-active')){
+        $(this).find('.u-icon-down').removeClass('z-active');
+        for(var i=0;i<arrs.length;i++){
+        $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').show(500);
+        }
+      }else{
+        $(this).find('.u-icon-down').addClass('z-active');
+        for(var i=0;i<arrs.length;i++){
+          $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').hide(800);
+        }
+      }
+    });
+    //单选按钮
+    $('.j-check').on('click',function(){
+      $(this).parent().find('.u-icon-check').removeClass('act').addClass('dis');
+      $(this).find('.u-icon-check').removeClass('dis').addClass('act');
+      console.log($(this).attr('xg-check'));
+      if($(this).attr('xg-check')==0){
+        $(this).parent().parent().find('.j-input-t').show();
+      }else if($(this).attr('xg-check')==1){
+        $(this).parent().parent().find('.j-input-t').hide();
+      }
+    });
+    //图片和检查按钮
+     judgement();
+      $('.u-point').on('click',function(){
+        if($(this).hasClass('z-active')){
+          $(this).parent().parent().find('.'+$(this).attr('xg-static')).removeClass('z-active');
+          judgement();
+        }else{
+          $(this).parent().parent().find('.'+$(this).attr('xg-static')).addClass('z-active');
+          judgement();
+        }
+      });
+      $('.u-point').on('mouseover',function(){
+        var position = $(this).position();
+        $('.u-img-pop').css({
+          left:position.left+60+'px',
+          top:position.top-100+'px'
+        }).show();
+      });
+      $('.u-point').on('mouseout',function(){
+        $('.u-img-pop').hide()
+      });
+      $('.u-msg').on('click',function(){
+        if($(this).hasClass('z-active')){
+          $(this).parent().parent().parent().find('.'+$(this).attr('xg-static')).removeClass('z-active');
+          judgement();
+        }else{
+          $(this).parent().parent().parent().find('.'+$(this).attr('xg-static')).addClass('z-active');
+          judgement();
+        }
+      });
+      function judgement(){
+          $('.u-msg').find('i').removeClass('u-icon-cuo').addClass('u-icon-dui');
+          $('.u-msg.z-active').find('i').removeClass('u-icon-dui').addClass('u-icon-cuo');
+      }
+     //漆面检查 和车身检查 切换
+        $('.j-qm').on('click',function(){
+            if($(this).hasClass('btn-white')){
+                $('.j-cs').removeClass('btn-main').addClass('btn-white');
+                $(this).removeClass('btn-white').addClass('btn-main');
+                $('.m-tab-qm').show(500);
+                $('.m-tab-cs').hide(500);
+            }
+        });
+        $('.j-cs').on('click',function(){
+            if($(this).hasClass('btn-white')){
+                $('.j-qm').removeClass('btn-main').addClass('btn-white');
+                $(this).removeClass('btn-white').addClass('btn-main');
+                $('.m-tab-cs').show(500);
+                $('.m-tab-qm').hide(500);
+            }
+        });
+
+  </script>
+</body>
+</html>
