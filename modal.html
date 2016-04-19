@@ -19,13 +19,38 @@
   <script src="res/bootstrap.min.js"></script>
   <!--<link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />-->
   <!--<link href="favicon.ico" rel="bookmark icon" />-->
+  <style>
+    ul>li>input{
+      display: none;
+    }
+    ul>li>input.act{
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="m-top">
    <a class="u-btn btn btn-normal btn-main" href="#"
         data-toggle="modal" data-target="#carModal">选择</a>
       </div>
+      <ul>
+        <li><input type="text" class="xg-1 act"></li>
+        <li><input type="text" class="xg-2"></li>
+        <li><input type="text" class="xg-3"></li>
+      </ul>
+      <script>
+        $('.xg-1').on('change',function(){
+          $('.xg-2').addClass('act');
+        });
+        $('.xg-2').on('change',function(){
+          $('.xg-3').addClass('act');
+        });
+        function judgeShow(p,c,ct){
+          p.val()?c.show():c.val('')&&ct.val('');
+          c.val()?ct.show():ct.val('');
+        }
 
+      </script>
   <!--弹出的模态框内容-->
       <div class="modal fade bs-example-modal-lg" id="carModal" tabindex="-1" role="dialog"
    aria-labelledby="myModalLabel" aria-hidden="true">
