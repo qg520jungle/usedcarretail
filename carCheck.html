@@ -23,6 +23,7 @@
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
+  <script src="lib/jquery.formCheck.js"></script>
   <!--[if lte IE 9]>
   <script src="lib/respond.min.js"></script>
   <script src="lib/html5shiv-printshiv.min.js"></script>
@@ -43,7 +44,15 @@
 
 		<!-- ace settings handler -->
 		<script src="res/js/ace-extra.min.js"></script>
-
+<style>
+  .xg-fc-backmsg{
+    position: absolute;
+    display: block;
+    left: 6px;
+    top: 3px;
+    background-color: #fff;
+  }
+</style>
 
 </head>
 <body>
@@ -232,13 +241,13 @@
             <dl class="col-md-4 u-dl" xg-data-select="0">
               <dt class="large"><span class="s-red">* </span>姓名：</dt>
               <dd class="f-pr">
-                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+                <input type="text" class="u-input u-input-normal xg-name"><i class="u-icon u-icon-dui f-hd"></i>
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="1">
               <dt class="large"><span class="s-red">* </span>电话：</dt>
               <dd class="f-pr">
-                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+                <input type="text" class="u-input u-input-normal xg-phone"><i class="u-icon u-icon-dui"></i>
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="2">
@@ -263,19 +272,19 @@
                 <dl class="col-md-4 u-dl" xg-data-select="5">
               <dt class="large"><span class="s-red">* </span>身份证号：</dt>
               <dd class="f-pr">
-                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-dui"></i>
+                <input type="text" class="u-input u-input-normal xg-ID"><i class="u-icon u-icon-dui"></i>
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="6">
               <dt class="large"><span class="s-red">* </span>邮箱：</dt>
               <dd class="f-pr">
-                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-tan"></i>
+                <input type="text" class="u-input u-input-normal xg-mail"><i class="u-icon u-icon-dui"></i>
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="6">
               <dt class="large"><span class="s-red">* </span>推荐人：</dt>
               <dd class="f-pr">
-                <input type="text" class="u-input u-input-normal"><i class="u-icon u-icon-cuo"></i>
+                <input type="text" class="u-input u-input-normal xg-people"><i class="u-icon u-icon-dui"></i>
               </dd>
             </dl>
             <dl class="col-md-12 u-dl " xg-data-select="7">
@@ -913,6 +922,114 @@
             }
         });
 
+
+  </script>
+  <script>
+    //姓名验证
+    $('.xg-name').on('blur', function () {
+        $(this).formCheck(
+            {
+                checkModel: 'nameCheck',
+                ref:/^[\u4e00-\u9fa5A-Za-z_]{1,32}$/,
+                msg: '请输入正确的姓名',
+                emptyMsg: '姓名不能为空'
+            }
+        );
+        if (this.resultBool) {
+            //通过
+            $(this).removeClass('z-input-error');
+        } else {
+            //没通过
+            $(this).next('.xg-fc-backmsg').fadeOut(3000,'linear').on('click',function(){$(this).stop(true,true)});
+            $(this).addClass('z-input-error');
+        }
+        $(this).nextAll('i').show();
+    }).on('click',function(){
+      $(this).next('.xg-fc-backmsg').stop(true,true);
+    });
+    //电话验证
+    $('.xg-phone').on('blur', function () {
+        $(this).formCheck(
+            {
+                checkModel: 'phoneCheck',
+                msg: '请输入正确的电话号码',
+                emptyMsg: '电话号码不能为空'
+            }
+        );
+        if (this.resultBool) {
+            //通过
+            $(this).removeClass('z-input-error');
+        } else {
+            //没通过
+            $(this).next('.xg-fc-backmsg').fadeOut(3000,'linear').on('click',function(){$(this).stop(true,true)});
+            $(this).addClass('z-input-error');
+        }
+    }).on('click',function(){
+      $(this).next('.xg-fc-backmsg').stop(true,true);
+    });
+    //邮箱验证
+    $('.xg-mail').on('blur', function () {
+        $(this).formCheck(
+            {
+                checkModel: 'emailCheck',
+                msg: '请输入正确的邮箱',
+                emptyMsg: '邮箱不能为空'
+            }
+        );
+        if (this.resultBool) {
+            //通过
+            $(this).removeClass('z-input-error');
+        } else {
+            //没通过
+            $(this).next('.xg-fc-backmsg').fadeOut(3000,'linear').on('click',function(){$(this).stop(true,true)});
+            $(this).addClass('z-input-error');
+        }
+    }).on('click',function(){
+      $(this).next('.xg-fc-backmsg').stop(true,true);
+    });
+    //身份证号验证
+    $('.xg-ID').on('blur', function () {
+        $(this).formCheck(
+            {
+                checkModel: 'IDCheck',
+                msg: '请输入正确的身份证号码',
+                emptyMsg: '身份证号码不能为空'
+            }
+        );
+        if (this.resultBool) {
+            //通过
+            $(this).removeClass('z-input-error');
+        } else {
+            //没通过
+            $(this).next('.xg-fc-backmsg').fadeOut(3000,'linear').on('click',function(){$(this).stop(true,true)});
+            $(this).addClass('z-input-error');
+        }
+    }).on('click',function(){
+      $(this).next('.xg-fc-backmsg').stop(true,true);
+    });
+     //推荐人验证
+    $('.xg-people').on('blur', function () {
+        $(this).formCheck(
+            {
+                checkModel: 'nameCheck',
+                ref:/^[\u4e00-\u9fa5A-Za-z_]{1,32}$/,
+                msg: '请输入正确的推荐人姓名',
+                required: false
+            }
+        );
+        if (this.resultBool) {
+            //通过
+            $(this).removeClass('z-input-error');
+            $(this).nextAll('i').show();
+        } else {
+            //没通过
+            $(this).next('.xg-fc-backmsg').fadeOut(3000,'linear').on('click',function(){$(this).stop(true,true)});
+            $(this).addClass('z-input-error');
+            $(this).nextAll('i').show();
+        }
+    }).on('click',function(){
+      $(this).next('.xg-fc-backmsg').stop(true,true);
+    });
   </script>
 </body>
 </html>
