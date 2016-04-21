@@ -79,6 +79,7 @@ li {
     font-size: 14px;
     &:hover{
       background-color: @main-b;
+      border-radius: 5px 5px 0 0;
     }
   }
   .z-active{
@@ -872,6 +873,56 @@ li {
   }
   .s-text{
     padding: 0 10px;
+  }
+}
+.m-search-box{
+  .left{
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    line-height: 31px;
+    &.tt{
+      width: 80px;
+      text-align: right;
+    }
+  }
+  .middle{
+    float: left;
+  }
+  .right{
+    float: right;
+     margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 31px;
+  }
+  .m-btn-box{
+    margin-left: 0;
+    .btn-lvl{
+      margin-left:0;
+      &.p{
+        margin-left:10px;
+      }
+    }
+  }
+  .m-adv-box{
+    border: 1px solid #ccc;
+    margin: 0 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: none;
+    .left.tt{
+      margin-bottom: 0;
+      margin-left: 0
+    }
+    .m-btn-box{
+      margin-bottom: 0;
+    }
+    dl{
+      margin-bottom: 0px;
+    }
   }
 }
 

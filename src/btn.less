@@ -1,6 +1,6 @@
 // out: null
 .btn{
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 12px;
   &.btn-s{
     padding: 3px 0px;
@@ -34,15 +34,23 @@
   }
 }
 .btn-main{
-  .btn-s(#fff,#ff7b46);
+  .btn-s(#fff,#fea246);
     &:hover {
         color:#fff;
+        background-color:  #ff7b46;
     }
 }
 .btn-white{
   color: #333;
   background-color:#fff;
   border-color: #ff7b46;
+  &.act{
+    .btn-s(#fff,#fea246);
+    &:hover {
+        color:#fff;
+        background-color:  #ff7b46;
+    }
+  }
 }
 
 .btn-psearch{
@@ -81,6 +89,7 @@ margin-left: 475px;
 .btn-b{
   letter-spacing: 24px;
 }
+.btn-
 
 /*xurong*/
 .btn-select{
@@ -89,6 +98,30 @@ margin-left: 475px;
   border-radius: 5px;
 }
 
+.btn-lvl{
+  border-radius: 0;
+
+    &:hover {
+        color:#000;
+        background-color:  #efefef;
+    }
+  .btn-s(#000,#ccc);
+  &.all.act{
+    .btn-s(#fff,#ff7b46);
+  }
+  &.p.act{
+    .btn-s(#fff,#74b500);
+  }
+  &.l.act{
+    .btn-s(#fff,#f4c901);
+  }
+  &.m.act{
+    .btn-s(#fff,#f68000);
+  }
+  &.h.act{
+    .btn-s(#fff,#d12e00);
+  }
+}
 .btn-textarea{
     margin-top: 10px;
     margin-left: 90px;
