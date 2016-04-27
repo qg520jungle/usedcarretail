@@ -6,9 +6,9 @@
   <meta name="renderer" content="webkit">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="viewport" id="viewport" content="width=400">
-  <meta name="keywords" content="采购审批" />
-  <meta name="description" content="采购审批" />
-  <title>采购审批</title>
+  <meta name="keywords" content="客户信息详情" />
+  <meta name="description" content="客户信息详情" />
+  <title>客户信息详情</title>
   <!-- bootstrap & fontawesome -->
 		<link rel="stylesheet" href="res/font-awesome/4.2.0/css/font-awesome.min.css" />
 
@@ -23,6 +23,7 @@
   <link href="res/bootstrap.css" rel="stylesheet">
   <link href="res/global.css" rel="stylesheet">
   <script src="lib/jquery.js"></script>
+  <script src="lib/jquery.formCheck.js"></script>
   <!--[if lte IE 9]>
   <script src="lib/respond.min.js"></script>
   <script src="lib/html5shiv-printshiv.min.js"></script>
@@ -43,7 +44,9 @@
 
 		<!-- ace settings handler -->
 		<script src="res/js/ace-extra.min.js"></script>
+<style>
 
+</style>
 
 </head>
 <body>
@@ -60,10 +63,10 @@
         <li><a href="./stortList.html">采购</a></li>
         <li><a href="./index.html">采购客户</a></li>
         <li><a href="./applyAdd.html">库存</a></li>
-        <li><a href="./carCheck.html">定价中心</a></li>
+        <li><a href="./carCheck.html"  class="z-active">定价中心</a></li>
         <li><a href="./indexStort.html">销售</a></li>
         <li><a href="./table.html">销售客户</a></li>
-        <li><a href="./storeApply.html"  class="z-active">整备</a></li>
+        <li><a href="./storeApply.html">整备</a></li>
         <li><a href="./car-allShow.html">系统管理</a></li>
         <li><a href="./carInfo.html" >基础管理</a></li>
       </ul>
@@ -197,18 +200,18 @@
     <div class="m-line "></div>
     <div class="m-side j-side">
       <ul class="">
-        <li><a href="###" class=""><i class=" iconfont zhengbeishenqing">&#xe61f;</i><span class="tab">整备申请</span><div class="u-arrow-right"></div></a></li>
-        <li><a href="###" class="z-active"><i class="iconfont feiyongyugu">&#xe62f;</i><span class="tab">费用预估</span><div class="u-arrow-right"></div></a></li>
-        <li><a href="###"><i class=" iconfont fyygshenpi">&#xe630;</i></i><span class="tab">费用预估审批</span></a><div class="u-arrow-right"></div></li>
-        <li><a href="###"><i class=" iconfont zhengbeibaobei">&#xe627;</i><span class="tab">整备报备</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###" class=""><i class=" iconfont chucidingjia">&#xe625;</i><span class="tab">初次定价</span><div class="u-arrow-right"></div></a></li>
+        <li><a href="###" class="z-active"><i class="iconfont zhengbeijianhe">&#xe62e;</i><span class="tab">整备检核</span><div class="u-arrow-right"></div></a></li>
+        <li><a href="###"><i class=" iconfont liebiao">&#xe62c;</i></i><span class="tab">待上架列表</span></a><div class="u-arrow-right"></div></li>
+        <li><a href="###"><i class=" iconfont quren">&#xe620;</i><span class="tab">确认定价</span></a><div class="u-arrow-right"></div></li>
       </ul>
     </div>
       <div class="m-crumb">
-        <i class="u-icon u-icon-location "></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">车辆查定详情</a>
+        <i class="u-icon u-icon-location "></i><span>您所在的位置：</span><a href="###">采购</a><span class="s-ff-c"> > </span><a href="###" class="z-active">车辆查定</a>
       </div>
       <div class="m-wrap">
         <div class="m-t">
-          <span>车辆信息</span>
+          <span>客户信息</span>
           <div class="m-t-bar">
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -217,129 +220,244 @@
             </div>
          </div>
         </div>
-        <div class="m-c snd">
+        <div class="m-c ">
         <div class="container-fluid">
           <div class="row">
-          <div class="m-info-tt">
-            <p>
-              宝马5系：该车系可用库存<span class="s-strong">20</span>辆，采购意向数<span class="s-strong">8</span>辆，销售意向数<span class="s-strong">10</span>辆
-            </p>
-          </div>
-          <div class="m-input-box ">
-            <div class="f-cb">
-            <div class="u-icon-down-handle j-contracts">
-              <div class="u-icon-down "></div>
-            </div>
+          <div class="m-custominfo">
+            <div class="f-cb f-line-b">
+            <div class="col-md-2 f-c-mr30">
+              <div class="m-lvl">
+                <span class="u-icon-lvl">
+                  H
+                </span>
+                <span class="u-info">采购</span>
+                <span class="u-star-bg"></span>
+                <div class="u-star j-lvl">
+                  <i class="u-icon u-icon-nostar showstar"></i>
+                  <i class="u-icon u-icon-nostar"></i>
+                  <i class="u-icon u-icon-nostar"></i>
+                  <i class="u-icon u-icon-nostar"></i>
+                  <i class="u-icon u-icon-nostar"></i>
+                </div>
 
+
+              </div>
+            </div>
+            <div class="f-cb col-md-10">
             <dl class="col-md-4 u-dl" xg-data-select="0">
-              <dt class="large"><span class="s-red"> </span>车型：</dt>
+              <dt class="normal"><span class="s-red"> </span>姓名：</dt>
               <dd class="f-pr">
-                <span>宝马5系 2015款 530le</span>
+                张三
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="1">
-              <dt class="large"><span class="s-red"> </span>客户姓名：</dt>
+              <dt class="verylarge "><span class="s-red"> </span>车牌：</dt>
               <dd class="f-pr">
-                <span>刘先生</span>
+                粤XT654（采购）
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="2">
-              <dt class="large"><span class="s-red"> </span>手机号码：</dt>
+              <dt class="large"><span class="s-red"> </span>跟进专员：</dt>
               <dd class="f-pr">
-                <span>13812341234</span>
+                罗经过
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="3">
-              <dt class="large"><span class="s-red"> </span>收购方式：</dt>
+              <dt class="normal"><span class="s-red"> </span>性别：</dt>
               <dd class="f-pr">
-                <span>自取</span>
+                男
               </dd>
             </dl>
                 <dl class="col-md-4 u-dl" xg-data-select="4">
-              <dt class="large"><span class="s-red"> </span>采购价格：</dt>
+              <dt class="verylarge"><span class="s-red"> </span>意向价格：</dt>
               <dd class="f-pr">
-                <span>250,000元</span>
+                500,000.00元
               </dd>
             </dl>
                  </dl>
                 <dl class="col-md-4 u-dl" xg-data-select="5">
-              <dt class="large"><span class="s-red"> </span>新车车型：</dt>
+              <dt class="large"><span class="s-red"> </span>下次跟进：</dt>
               <dd class="f-pr">
-                <span>XXXXXXXXXXXXXXXXXXXXXXXXX</span>
+                2015-6-6
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="6">
-              <dt class="large"><span class="s-red"> </span>采购定价：</dt>
+              <dt class="normal"><span class="s-red"> </span>电话：</dt>
               <dd class="f-pr">
-                <span>250,000元-260,000元</span>
+                13812341234
               </dd>
             </dl>
             <dl class="col-md-4 u-dl" xg-data-select="6">
-              <dt class="large"><span class="s-red"> </span>新车价格：</dt>
+              <dt class="verylarge"><span class="s-red"> </span>车龄（销售）：</dt>
               <dd class="f-pr">
-                <span>300,000元</span>
+                1年以内
               </dd>
             </dl>
-            <dl class="col-md-12 u-dl" xg-data-select="6">
-              <dt class="large">车辆图片：</dt>
-              <dd class="f-vt">
-                <ul class="f-cb m-box-img">
-                  <li class="f-fl">
-                    <div class="box-img">
-                      <img src="http://lorempixel.com/70/70/" alt="">
-                    </div>
-                    <div class="box-tt">
-                      <span class="s-img">车头</span>
-                    </div>
-                  </li>
-                  <li class="f-fl">
-                    <div class="box-img">
-                      <img src="http://lorempixel.com/70/70/" alt="">
-                    </div>
-                    <div class="box-tt">
-                      <span class="s-img">名牌</span>
-                    </div>
-                  </li>
-                </ul>
+            <dl class="col-md-4 u-dl" xg-data-select="6">
+              <dt class="large"><span class="s-red"> </span>跟进说明：</dt>
+              <dd class="f-pr">
+                巴拉巴拉巴拉巴拉来吧
               </dd>
             </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="6">
+              <dt class="normal"><span class="s-red"> </span>车系：</dt>
+              <dd class="f-pr">
+                巴拉巴拉巴拉巴拉来吧
+              </dd>
+            </dl>
+            <dl class="col-md-4 u-dl" xg-data-select="6">
+              <dt class="verylarge"><span class="s-red"> </span>公里数（销售）：</dt>
+              <dd class="f-pr">
+                1万公里以内
+              </dd>
+            </dl>
+            </div>
+            </div>
+           <!-- <div class="m-btn-box f-fr col-md-3">
+              <a href="javascript" class="u-btn btn btn-normal btn-main">搜索</a> <a href="javascript" class="u-btn btn btn-normal btn-white">取消</a>
+            </div>-->
+
+          <div class=" m-tab-all f-mt-sm">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">基本信息</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">跟进</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+      <div class="m-tab">
+       <div class="f-cb">
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">推荐人：</dt>
+          <dd>郭金</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">电话：</dt>
+          <dd>13812341234</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">身份证号：</dt>
+          <dd>211022123412341234</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">地址：</dt>
+          <dd>湖北省锦州市监利县什么什么</dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">邮箱：</dt>
+          <dd>111000</dd>
+        </dl>
+        </div>
+        <dl class="f-db u-block col-md-12 col-sm-12 u-dl">
+          <dt class="large">跟踪记录：</dt>
+          <dd class="m-table col-md-12">
+            <table class="table table-bordered">
+              <tr>
+                <th>意向级别</th>
+                <th>跟踪内容</th>
+                <th>跟进人</th>
+                <th>车型（销售）</th>
+                <th>价格</th>
+                <th>公里数（销售）</th>
+                <th>车龄（销售）</th>
+                <th>呼出号码</th>
+                <th>跟进时间</th>
+              </tr>
+              <tr>
+                <td>H</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </table>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+      <div class="m-tab">
+        <div class="f-cb">
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">呼出电话：</dt>
+          <dd>
+            <input type="text" class="u-input u-input-normal">
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">意向级别：</dt>
+          <dd>
+            <select name="" id="">
+                <option value="">H</option>
+                <option value="">L</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">下次回访时间：</dt>
+          <dd>
+            <input type="text" class="u-input u-input-normal">
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">车型：</dt>
+          <dd>
+            <input type="text" class="u-input u-input-normal">
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">意向价格：</dt>
+          <dd>
+            <select class="u-input u-input-normal">
+                <option value="">50万元-100万元</option>
+                <option value="">20万元-50万元</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="col-md-4 col-sm-6 u-dl">
+          <dt class="large">里程数(销售)：</dt>
+          <dd>
+            <select class="u-input u-input-normal">
+                <option value="">1万公里以下</option>
+                <option value="">1-5万公里</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="col-md-12 col-sm-6 u-dl">
+          <dt class="large">车龄(销售)：</dt>
+          <dd>
+            <select>
+                <option value="">1年内</option>
+                <option value="">1-3年</option>
+            </select>
+          </dd>
+        </dl>
+        </div>
+        <dl class="col-md-8 col-sm-6 u-dl">
+          <dt>会谈/跟踪描述：</dt>
+          <dd>
+        <textarea name="" id="" class="u-textarea u-textarea-l"></textarea>
+          </dd>
+        </dl>
+      </div>
+    </div>
+   </div>
+
 
           </div>
-          </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="m-wrap">
-        <div class="m-t f-pr">
-          <span>审批结果</span>
-          <div class="m-t-info">
-            <div class="u-icon-left-wedge"></div>
-            <span class="info">采购价格：200,000元</span>
-         </div>
-        </div>
-        <div class="m-c snd">
-        <div class="container-fluid">
-          <div class="row">
-          <div class="m-input-box ">
-            <div class="f-cb">
-            <dl class="col-md-12 u-dl" xg-data-select="0">
-              <dt class="tolarge"><span class="s-red"> </span>审批结果是否通过：</dt>
-              <dd class="f-pr">
-                <input type="text" class="u-input u-input-normal" value="张三"><i class="u-icon-down-right"></i><i class="u-icon u-icon-dui"></i>
-              </dd>
-            </dl>
-            <dl class="col-md-12 u-dl" xg-data-select="1">
-              <dt class="tolarge"><span class="s-red"> </span>备注：</dt>
-              <dd class="f-pr">
-                <textarea class="u-input-langarea u-textarea ">
-          </textarea>
+           <dl class="col-md-2 u-dl col-md-offset-10">
+              <dt class="large"></dt>
+              <dd class="btn-psearch">
+                 <a href="javascript" class="u-btn btn btn-normal btn-main">返回</a>
               </dd>
             </dl>
           </div>
-          </div>
-           <div class="f-fr f-mb30 f-mr20">
-              <a href="javascript:void(0);" class="u-btn btn  btn-main"><span></span>文件保存</a>
           </div>
           </div>
         </div>
@@ -380,84 +498,24 @@
         })
       })
     });
-    //隐藏input选项
-    var stat='3,4,5';//传入参数
-    $('.j-contracts').on('click',function(){
-       var arrs=stat.split(',');
-      if($(this).find('.u-icon-down').hasClass('z-active')){
-        $(this).find('.u-icon-down').removeClass('z-active');
-        for(var i=0;i<arrs.length;i++){
-        $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').show(500);
-        }
+    //级别的星星
+    //传入参数 级别
+    var lvl=2;
+    showStar(lvl);
+    function showStar(lvl){
+      var _lvl=parseInt(lvl);
+      if(_lvl>=0&&_lvl<=5){
+        $('.j-lvl').find('.u-icon-nostar').each(function(index,el){
+          $(el).removeClass('showstar');
+          if(index<_lvl){
+            $(el).addClass('showstar');
+          }
+        });
       }else{
-        $(this).find('.u-icon-down').addClass('z-active');
-        for(var i=0;i<arrs.length;i++){
-          $(this).parent().find('[xg-data-select="'+arrs[i]+'"]').hide(800);
-        }
+        console.log('级别为0-5的整数，传入值不符合规定')
       }
-    });
-    //单选按钮
-    $('.j-check').on('click',function(){
-      $(this).parent().find('.u-icon-check').removeClass('act').addClass('dis');
-      $(this).find('.u-icon-check').removeClass('dis').addClass('act');
-      console.log($(this).attr('xg-check'));
-      if($(this).attr('xg-check')==0){
-        $(this).parent().parent().find('.j-input-t').show();
-      }else if($(this).attr('xg-check')==1){
-        $(this).parent().parent().find('.j-input-t').hide();
-      }
-    });
-    //图片和检查按钮
-     judgement();
-      $('.u-point').on('click',function(){
-        if($(this).hasClass('z-active')){
-          $(this).parent().parent().find('.'+$(this).attr('xg-static')).removeClass('z-active');
-          judgement();
-        }else{
-          $(this).parent().parent().find('.'+$(this).attr('xg-static')).addClass('z-active');
-          judgement();
-        }
-      });
-      $('.u-point').on('mouseover',function(){
-        var position = $(this).position();
-        $('.u-img-pop').css({
-          left:position.left+60+'px',
-          top:position.top-100+'px'
-        }).show();
-      });
-      $('.u-point').on('mouseout',function(){
-        $('.u-img-pop').hide()
-      });
-      $('.u-msg').on('click',function(){
-        if($(this).hasClass('z-active')){
-          $(this).parent().parent().parent().find('.'+$(this).attr('xg-static')).removeClass('z-active');
-          judgement();
-        }else{
-          $(this).parent().parent().parent().find('.'+$(this).attr('xg-static')).addClass('z-active');
-          judgement();
-        }
-      });
-      function judgement(){
-          $('.u-msg').find('i').removeClass('u-icon-cuo').addClass('u-icon-dui');
-          $('.u-msg.z-active').find('i').removeClass('u-icon-dui').addClass('u-icon-cuo');
-      }
-     //漆面检查 和车身检查 切换
-        $('.j-qm').on('click',function(){
-            if($(this).hasClass('btn-white')){
-                $('.j-cs').removeClass('btn-main').addClass('btn-white');
-                $(this).removeClass('btn-white').addClass('btn-main');
-                $('.m-tab-qm').show(500);
-                $('.m-tab-cs').hide(500);
-            }
-        });
-        $('.j-cs').on('click',function(){
-            if($(this).hasClass('btn-white')){
-                $('.j-qm').removeClass('btn-main').addClass('btn-white');
-                $(this).removeClass('btn-white').addClass('btn-main');
-                $('.m-tab-cs').show(500);
-                $('.m-tab-qm').hide(500);
-            }
-        });
+    }
+
 
   </script>
 </body>

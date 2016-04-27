@@ -34,6 +34,9 @@
   &.short{
     width: 205px;
   }
+  &.full{
+    width: 100%;
+  }
 }
 .u-input-row-s{
   width: 886px;
@@ -54,8 +57,8 @@
   }
   .input-t{
     width: 46px;
-    top: 3px;
-    left: 5px;
+    top: 6px;
+    left: 7px;
   }
   .input-c{
     padding-left: 50px;
@@ -511,9 +514,12 @@
    height:23px;
 }
 .u-input-file{
-  width: 65px;
-  height: 20px;
+  height: 70px;
+  width: 70px;
   background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .u-number{
   display: inline-block;
@@ -524,6 +530,25 @@
   line-height: 20px;
   background-color: #ffa347;
   border-radius: 11px;
+}
+
+.u-tab-3{
+  width:25%;
+}
+.u-tab-6{
+  width: 50%;
+}
+.u-tab-3,.u-tab-6{
+   display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  &.act{
+    border-bottom: 4px solid @main-c;
+    color: @main-c;
+    }
 }
 
 

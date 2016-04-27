@@ -191,8 +191,11 @@ li {
     }
   }
   .tab{
+    display: inline-block;
+    width: 84px;
     vertical-align: top;
-    margin-left: 18px;
+    text-align: left;
+    margin-left: 15px;
   }
 }
 
@@ -242,6 +245,8 @@ li {
   &.half{
     padding-left: 0px;
     padding-right: 0px;
+    margin-left: 172px;
+
 
   }
   &.last{
@@ -631,9 +636,21 @@ li {
   margin-right: 80px;
 }
 .m-img-point{
-  width: 430px;
-  height: 300px;
+  width: 570px;
+  height: 435px;
   position: relative;
+  &.wg{
+    background-image: url(../upload/waiguan.png);
+  }
+  &.ns{
+    background-image: url(../upload/neishi.png);
+  }
+  &.gj{
+    background-image: url(../upload/gujia.png);
+  }
+  &.dp{
+    background-image: url(../upload/gujiadipan.png);
+  }
 }
 .m-msg{
   span{
@@ -757,11 +774,11 @@ li {
 }
 .m-account{
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   width: 200px;
   margin: 0 auto;
   li{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   li:last-child{
     margin-bottom: 0px;
@@ -925,7 +942,56 @@ li {
     }
   }
 }
-
+.m-lvl{
+  width: 160px;
+  height: 115px;
+  border: 1px solid;
+  background-color: #fbabe3;
+  text-align: center;
+  position: relative;
+  .u-info{
+    position: absolute;
+    top:5px;
+    left: 0;
+    padding: 2px 5px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0;
+  }
+  .u-star-bg{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    background-color: #000;
+	opacity:.5;
+	filter:alpha(opacity=50);
+  }
+  .u-star{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    display: inline-block;
+    height: 26px;
+    width: 100%;
+  }
+}
+.tab-content{
+  background-color: #f8f8fb;
+}
+.m-msg-point{
+  background-color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+.m-tab-head{
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.m-custominfo{
+  margin: 20px;
+}
   @media (max-width: 991px) and (min-width: 768px){
     .m-side{
       display: none;

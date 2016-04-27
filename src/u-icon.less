@@ -91,6 +91,34 @@
   top: 10px;
   right: 5px;
 }
+.u-icon-arrow-top{
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  content: " ";
+  display: block;
+  cursor: pointer;
+  border-bottom-color: #aaa;
+  border-width: 12px;
+  top: -24px;
+  left: 640px;
+  &:after{
+    position: absolute;
+    border-color: transparent;
+    border-style: solid;
+    height: 0;
+    width: 0;
+    content: " ";
+    display: block;
+    cursor: pointer;
+    border-bottom-color: #fff;
+    border-width: 12px;
+    top: -11px;
+    right: -12px;
+  }
+}
 .u-icon-check{
   display: inline-block;
   width: 12px;
@@ -102,6 +130,33 @@
   }
   &.dis{
     background-color: #fff;
+  }
+}
+.u-font-add{
+  font-size: 12px;
+}
+.u-font-loction{
+  font-size: 12px;
+}
+.u-icon-lvl{
+  color:#fff;
+  font-weight: 500;
+  height: 115px;
+  line-height: 95px;
+  font-family: Microsoft YaHei;
+  font-size: 52px;
+}
+.u-icon-star{
+  width: 17px;
+  height: 17px;
+  background-position: -131px -1px;
+}
+.u-icon-nostar{
+  width: 17px;
+  height: 17px;
+  background-position: -151px -1px;
+  &.showstar{
+    background-position: -131px -1px;
   }
 }
 
